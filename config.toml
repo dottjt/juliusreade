@@ -1,0 +1,9 @@
+baseurl = "http://juliusreade.com/"
+languageCode = "en-us"
+title = "Julius Reade: Somebody Please Help Me"
+theme = "reade"
+
+
+[params]
+  Author = "Julius Reade"
+  

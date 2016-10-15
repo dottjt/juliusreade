@@ -1,0 +1,14 @@
+<main class="two-thirds column article-full">
+    {{ range .Data.Pages }}
+        <article>
+        <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <span>
+            <time datetime="{{ .Date.Format "2016-01-02" }}"> 
+            {{ .Date.Format "January 02, 2007"}}
+            </time>
+        </span>
+    {{ .Summary }}
+
+        </article>
+    {{ end }}
+</main> 
