@@ -2,7 +2,6 @@ box: node
 build:
   steps:
     - npm-install
-    - hgen/gulp
     - arjen/hugo-build:
         version: "0.15"
         theme: reade
