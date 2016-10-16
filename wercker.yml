@@ -3,11 +3,11 @@ build:
   steps:
     - npm-install
     - hgen/gulp
-    - arjen/hugo-build
-      version: "0.15"
-      theme: reade
-      flags: --buildDrafts=true
-      config: config.toml
+    - arjen/hugo-build:
+        version: "0.15"
+        theme: reade
+        flags: --buildDrafts=true
+        config: config.toml
     - samueldebruyn/minify:
         css: false
         js: false
