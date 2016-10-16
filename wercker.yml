@@ -10,8 +10,8 @@ build:
 deploy:
   steps:
     - s3sync:
-        key_id: $ACCESS_KEY
-        key_secret: $SECRET_KEY
-        bucket_url: $SHORT_BUCKET
-        source_dir: public/
+        key-id: $KEY
+        key-secret: $SECRET
+        bucket-url: $SHORT_BUCKET
+        source-dir: public/
         opts: --acl-public --add-header=Cache-Control:max-age=3600
