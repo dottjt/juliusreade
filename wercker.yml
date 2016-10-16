@@ -3,6 +3,7 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
+        version: "0.15"
         theme: reade
         flags: --buildDrafts=true
 
@@ -13,4 +14,4 @@ deploy:
         key_secret: $SECRET_KEY
         bucket_url: $SHORT_BUCKET
         source_dir: public/
-        opts: --add-header=Cache-Control:max-age=604800
+        opts: --acl-public --add-header=Cache-Control:max-age=3600
