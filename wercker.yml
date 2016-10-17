@@ -12,7 +12,7 @@ deploy:
     - s3sync:
         source-dir: public/
         delete-removed: true
-        bucket-url: $SHORT_BUCKET
+        bucket-url: $BUCKET
         key-id: $KEY
         key-secret: $SECRET
         opts: --acl-public --add-header=Cache-Control:max-age=3600
