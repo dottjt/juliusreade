@@ -265,3 +265,10 @@ li {
 .footer {
    margin-top: 40px;  
 }
+
+
+/* About */
+
+.seven p {
+    font-size: 2rem;
+}
