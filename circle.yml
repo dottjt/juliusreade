@@ -1,0 +1,15 @@
+
+dependencies:
+  pre:
+    - go get -v github.com/spf13/hugo
+    - pip install awscli
+
+test:
+  override:
+    - hugo
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - aws s3 sync public/ s3://juliusreade.com --delete --region ap-southeast-2
