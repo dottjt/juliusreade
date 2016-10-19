@@ -1,13 +1,15 @@
 <main class="two-thirds column article-full">
-    {{ range .Data.Pages }}
+    {{ range where .Data.Pages "Section" "blog" }}
         <article>
         <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <span>
-            <time datetime="{{ .Date.Format "2016-01-02" }}"> 
-            {{ .Date.Format "January 02, 2007"}}
+            <time class="main-time" datetime="{{ .Date.Format "2016-01-02" }}"> 
+            {{ .Date.Format "2 January 2007"}}
             </time>
         </span>
-    {{ .Summary }}
+        <p class="main-summary">
+        {{ .Summary }}
+        </p>
 
         </article>
     {{ end }}
