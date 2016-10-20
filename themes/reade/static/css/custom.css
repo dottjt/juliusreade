@@ -1,3 +1,11 @@
+/*
+HEADER
+NAV
+SOCIAL
+
+*/
+
+
 /* HEADER   */
 
 .super-title {
@@ -14,14 +22,6 @@
     text-align: center;
     font-size: 3rem;
     padding-bottom: 20px;
-}
-
-.aside-pp {
-    text-align: justify;
-}
-
-.aside-p {
-    margin-top: 25px;
 }
 
 /* NAV */
@@ -54,161 +54,11 @@
     margin-bottom: 3rem;    
 }
 
-/* ASIDE */
-
-.main-image {        
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-
-
-@media (max-width: 900px) {
-    .fixed-aside {
-        position: relative;
-        left: 0%;
-    }
-    
-    
-}
-
-
-@media (min-width: 1200px) {
-    .fixed-aside {
-    position: fixed;
-    padding: 6px;
-    transform: translateX(-34.333333%);
-    left: 76%;
-    }
-   
-  
-    
-    .actual-aside {
-        margin-top: -1rem;
-    }
-  
-}
-
-
-/* This needs to be above the other .social-contatainer-article :) */
-.social-container-article {
-    display: none;
-    }
-
-@media (max-width: 900px) {
-
-.social-container-article {
-    display: inline-block;
-    }
-    
-    .homepage-back {
-        display: none;
-    }
-
-}
-
-.social-individual {
-    padding: 1rem 1rem 0 1rem;
-    margin-right: 10px;
-}
-
-@media (max-width: 1200px) {
-   .content {
-       font-size: 2rem;
-       max-width: 600px;
-   } 
-    .social-container2 { 
-    display: block;  
-    }
-
-/*
-
-.social-container3 {    
-   flex-direction: row;  
-   justify-content: center;
-   align-items: center;
-   display: flex;
-  }
-  */
-.main-image-flex {
-
-}
-  .social2 {
-     padding: 0;
-   }
-   
-   .fixed-aside {
-        position: relative;
-        left: 8%;
-    }
-}
-
-.blog-twitter-link {
-    font-size: 3rem;
-}
-.custom-blog-container {
-    margin-top: 3rem;   
-}
-
-
-
-
-@media (min-width: 400px) {
-
-ul {
-    padding-left: 4rem;
-}
-
-.img-aspirations {
-    text-align: center;
-    width: 80%;
-}
-
-li {
-    text-indent: -4.2rem;
-    padding-left: 1rem;
-    line-height: 3.75rem; 
-}
-
-.why {
-    text-decoration: underline;
-}
-
-
-/* ARTICLE */
-
-.article-full {
-   margin-top: 30px; 
-}
-
-
-.homepage-back {
-    position: fixed;
-    left: 2%;
-    top: 5%;
-}
-
-
-.content {
-    font-size: 2.2rem;
-     padding-bottom: 4rem;
-     font-family: 'Open Sans', sans-serif;
-     max-width: 700px;
-     
-}
-
-.content p {
-    padding-bottom: 1rem;
-}
 
 /* ABOUT & ASPIRATIONS */
 
 .about-title {
-    margin-top: 5rem;
-    margin-bottom: 4.5rem;
+    margin-top: 5rem;    margin-bottom: 4.5rem;
     text-align: center;
     font-size: 10rem;
 }
@@ -236,6 +86,31 @@ li {
     margin-bottom: 2rem;
 }
 
+
+/* ARTICLE */
+
+.article-container {
+   margin-top: 3rem; 
+}
+
+.homepage-back {
+    position: fixed;
+    left: 2%;
+    top: 5%;
+}
+
+.content {
+    font-size: 2.2rem;
+     padding-bottom: 4rem;
+     font-family: 'Open Sans', sans-serif;
+     max-width: 700px; 
+}
+
+.content p {
+    padding-bottom: 1rem;
+}
+
+
 /* ASIDE-ARTICLE    */
 
 .actual-aside {
@@ -260,13 +135,109 @@ a {
 }
 
 
+.aside-pp {
+    text-align: justify;
+}
 
+.aside-p {
+    margin-top: 25px;
+}
+
+
+/* main-aside collapse behaviour */
+@media (max-width: 900px) {
+    .fixed-aside {
+        position: relative;
+        left: 0%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .fixed-aside {
+    position: fixed;
+    padding: 6px;
+    transform: translateX(-34.333333%);
+    left: 76%;
+    }  
+    .actual-aside {
+        margin-top: -1rem;
+    }
+  
+}
+
+/* This needs to be above the other .social-contatainer-article :) */
+.social-container-article {
+    display: none;
+    }
+
+
+@media (max-width: 900px) {
+
+.social-container-article {
+    display: inline-block;
+    }
+
+}
+
+.social-individual {
+    padding: 1rem 1rem 0 1rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+   .content {
+       font-size: 2rem;
+       max-width: 600px;
+   } 
+    .social-container2 { 
+    display: block;  
+    }
+
+/*
+
+.social-container3 {    
+   flex-direction: row;  
+   justify-content: center;
+   align-items: center;
+   display: flex;
+  }
+  */
+  .social2 {
+     padding: 0;
+   }
+   
+   .fixed-aside {
+        position: relative;
+        left: 8%;
+    }
+}
+
+
+
+
+/* ASIDE */
+
+.main-image {
+    padding-top: 1.6rem;  
+    padding-bottom: 1.42rem;  
+
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
 
 /* MAIN */
 
-.main-summary {
-   font-size: 1.8rem; 
+.title {
+    font-size: 4rem;    
 }
+
+.main-summary 
+   font-size: 1.8rem;
+
 
 .main-time {
     margin-bottom: 2rem;
@@ -278,4 +249,36 @@ a {
 
 .footer {
    margin-top: 40px;  
+}
+
+/* apply to all */
+
+@media (max-width: 900px) {
+    
+    .homepage-back {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 400px) {
+
+ul {
+    padding-left: 4rem;
+}
+
+.img-aspirations {
+    text-align: center;
+    width: 80%;
+}
+
+li {
+    text-indent: -4.2rem;
+    padding-left: 1rem;
+    line-height: 3.75rem; 
+}
+
+.why {
+    text-decoration: underline;
 }
