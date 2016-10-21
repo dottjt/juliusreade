@@ -8,9 +8,6 @@ build:
         version: "0.16"
         theme: reade
         flags: --buildDrafts=true
-    - samueldebruyn/minify:
-        css: false
-        js: false
 
 
 deploy:
