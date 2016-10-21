@@ -10,3 +10,5 @@ category = "categories"
 [params]
   Author = "Julius Reade"
   
+[permalinks]
+  blog = "/:year/:month/:day/:title/"

@@ -96,6 +96,12 @@ SOCIAL
    margin-top: 3rem; 
 }
 
+.blog-article-title {
+    margin-top: 3rem;
+    line-height: 7rem;   
+
+}
+
 .homepage-back {
     position: fixed;
     left: 2%;
@@ -247,7 +253,7 @@ a {
 .main-time {
     margin-bottom: 2rem;
     display: block;
-    font-size: 2rem;
+    font-size: 2.75rem;
     text-align: center;
 }
 
@@ -255,7 +261,6 @@ a {
    font-size: 1.8rem;
 
 }
-
 
 
 /* Writing */
