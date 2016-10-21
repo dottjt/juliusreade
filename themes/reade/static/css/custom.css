@@ -77,8 +77,11 @@ SOCIAL
     font-size: 2.5rem;
 }
 
-.about-container h2 {
+.about-container h3 {
     margin-top: 5rem;
+    line-height: 5rem;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2rem;
 }
 
 .about-text1 {
@@ -87,6 +90,9 @@ SOCIAL
     margin-bottom: 2rem;
 }
 
+.about-nav li {
+    font-size: 2rem;
+}
 
 /* ARTICLE */
 
