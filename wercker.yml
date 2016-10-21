@@ -6,6 +6,9 @@ build:
         version: "0.16"
         theme: reade
         flags: --buildDrafts=true
+    - samueldebruyn/minify:
+        base_dir: public/
+        threads: "3"
 
 
 deploy:

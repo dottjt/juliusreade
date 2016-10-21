@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Julius Reade: Somebody Please Help Me"
 theme = "reade"
 
+[taxonomies]
+tag = "tags"
+category = "categories"
 
 [params]
   Author = "Julius Reade"

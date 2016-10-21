@@ -27,10 +27,11 @@ SOCIAL
 /* NAV */
 
 .nav {
+    
     display: flex;
     align-items: center;
-    height: 7rem;
     text-align: center;
+    height: 7rem;
     font-size: 2.8rem;
     margin-bottom: 3rem;
     border-bottom: black solid 0.05rem;
@@ -51,7 +52,7 @@ SOCIAL
 
 .social-container {
     text-align: center;
-    margin-bottom: 3rem;    
+    margin-bottom: 3rem;
 }
 
 
@@ -118,6 +119,17 @@ SOCIAL
 }
 
 
+.aside-container {
+    text-align: justify;
+}
+
+.aside-content {
+    margin-top: 1.5rem;
+}
+.aside-content p {
+    margin-top: 1.5rem;
+}
+
 .social-container2 {    
    flex-direction: row;  
    justify-content: center;
@@ -134,14 +146,6 @@ a {
     text-decoration: none;
 }
 
-
-.aside-pp {
-    text-align: justify;
-}
-
-.aside-p {
-    margin-top: 25px;
-}
 
 
 /* main-aside collapse behaviour */
@@ -219,7 +223,7 @@ a {
 /* ASIDE */
 
 .main-image {
-    padding-top: 1.6rem;  
+    padding-top: 1rem;  
     padding-bottom: 1.42rem;  
 
     width: 15rem;
@@ -231,19 +235,33 @@ a {
 
 /* MAIN */
 
-.title {
-    font-size: 4rem;    
+.main-article-title {
+    font-size: 4rem; 
+    line-height: 6rem;   
+    margin-top: 3rem;
+    text-align: center;
 }
-
-.main-summary 
-   font-size: 1.8rem;
-
 
 .main-time {
     margin-bottom: 2rem;
     display: block;
     font-size: 2rem;
+    text-align: center;
 }
+
+.main-summary {
+   font-size: 1.8rem;
+
+}
+
+
+
+/* Writing */
+
+.writing-list {
+    font-size: 2rem;
+}
+
 
 /* FOOTER */
 
