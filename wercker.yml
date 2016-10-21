@@ -1,9 +1,7 @@
-box: node
+box: debian
 
 build:
   steps:
-    - npm-install
-    - hgen/gulp
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
