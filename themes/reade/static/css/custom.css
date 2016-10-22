@@ -203,10 +203,12 @@ a {
 
 .social-individual {
     padding: 1rem 1rem 0 1rem;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
+
 @media (max-width: 1200px) {
+
    .content {
        font-size: 2rem;
        max-width: 600px;
@@ -214,16 +216,20 @@ a {
     .social-container2 { 
     display: block;  
     }
+    .social-individual {
+        display: inline-block;
+        padding: 0.7rem 0.7rem 0 0.7rem;
+        margin-right: 1rem;
+    }
+    
+    .social-container3 {    
+        flex-direction: row;  
+        justify-content: center;
+        align-items: center;
+        display: flex;
+     }
 
-/*
-
-.social-container3 {    
-   flex-direction: row;  
-   justify-content: center;
-   align-items: center;
-   display: flex;
-  }
-  */
+  
   .social2 {
      padding: 0;
    }
@@ -295,8 +301,21 @@ a {
 
 }
 
+@media (max-width: 550px) {
+    
+    .blog-article-title {
+        margin-top: 0rem;
+        line-height: 6rem;
+    }
+
+}
+
+
 
 @media (min-width: 400px) {
+
+
+
 
 ul {
     padding-left: 4rem;
@@ -315,4 +334,14 @@ li {
 
 .why {
     text-decoration: underline;
+}
+
+}
+
+
+/* MAILCHIMP */
+
+#mc_embed_signup {
+    border: 0.1rem solid black;
+    border-radius: 1rem;
 }

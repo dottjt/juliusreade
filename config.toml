@@ -3,6 +3,12 @@ languageCode = "en-us"
 title = "Julius Reade: Somebody Please Help Me"
 theme = "reade"
 
+
+
+disqusShortname = "juliusreade"
+disqus_url = "https://juliusreade.disqus.com/"
+
+
 [taxonomies]
 tag = "tags"
 category = "categories"
@@ -12,3 +18,4 @@ category = "categories"
   
 [permalinks]
   blog = "/:year/:month/:day/:title/"
+
