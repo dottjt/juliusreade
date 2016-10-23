@@ -1,3 +1,4 @@
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -578,8 +579,8 @@ CUSTOM CSS FILE IS HERE!
     height: 7rem;
     font-size: 2.8rem;
     margin-bottom: 3rem;
-    border-bottom: black solid 0.05rem;
-    border-top: black solid 0.05rem;
+    border-bottom: black solid 0.1rem;
+    border-top: black solid 0.1rem;
 }
 
 /* SOCIAL */
@@ -625,6 +626,14 @@ CUSTOM CSS FILE IS HERE!
     font-size: 2.1rem;
 }
 
+.about-side-nav {
+}
+
+.about-nav li {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+
+}
 
 .about-container h3 {
     margin-top: 5rem;
@@ -639,9 +648,6 @@ CUSTOM CSS FILE IS HERE!
     margin-bottom: 2rem;
 }
 
-.about-nav li {
-    font-size: 2rem;
-}
 
 /* ARTICLE */
 
@@ -712,8 +718,7 @@ a {
 /* main-aside collapse behaviour */
 @media (max-width: 900px) {
     .fixed-aside {
-        position: relative;
-        left: 0%;
+      display: none;
     }
 }
 
@@ -739,6 +744,10 @@ a {
 
 @media (max-width: 900px) {
 
+.about-side-nav {
+  display: none;
+}
+
 .social-container-article {
     display: inline-block;
     }
@@ -752,6 +761,9 @@ a {
 
 
 @media (max-width: 1200px) {
+  #disqus_thread {
+    max-width: 550px;
+  }
 
    .content {
        font-size: 2rem;
@@ -832,7 +844,8 @@ a {
 /* FOOTER */
 
 .footer {
-   margin-top: 40px;  
+   margin-top: 4rem; 
+   margin-bottom: 2rem;  
 }
 
 /* apply to all */
@@ -882,4 +895,22 @@ a {
 #mc_embed_signup {
     border: 0.1rem solid black;
     border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+
+}
+
+#mc_embed_signup h5 {
+  font-size: 3rem;
+}
+
+#mc_embed_signup h5 {
+  font-size: 3rem;
+}
+
+/* DISQUS THREAD */
+
+#disqus_thread {
+  max-width: 700px; 
 }
