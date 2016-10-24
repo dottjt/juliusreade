@@ -2,7 +2,7 @@
 
     {{ range where .Data.Pages "Section" "blog" }}
         <article>
-
+            <img class="thumbnail" src="{{ .Params.thumbnail }}" alt="Hello there">
         <h2 class="main-article-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         
         <span>

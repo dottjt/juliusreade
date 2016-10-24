@@ -581,7 +581,22 @@ CUSTOM CSS FILE IS HERE!
     margin-bottom: 3rem;
     border-bottom: black solid 0.1rem;
     border-top: black solid 0.1rem;
+    font-
 }
+/*
+.nav-item1 {
+  background-color: #B1E8FA;
+     
+} 
+
+.nav-item2 {
+  background-color: #E8B1FA;
+}
+
+.nav-item3 {
+  background-color: #C3FAB1;
+}
+*/
 
 /* SOCIAL */
 
@@ -803,7 +818,7 @@ a {
 
 .main-image {
     padding-top: 1rem;  
-    padding-bottom: 1.42rem;  
+    padding-bottom: 2.22rem;  
 
     width: 15rem;
     height: 15rem;
@@ -817,8 +832,14 @@ a {
 .main-article-title {
     font-size: 4rem; 
     line-height: 6rem;   
-    margin-top: 3rem;
+    margin-top: 1.7rem;
     text-align: center;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .main-time {
@@ -902,12 +923,9 @@ a {
 }
 
 #mc_embed_signup h5 {
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 
-#mc_embed_signup h5 {
-  font-size: 3rem;
-}
 
 /* DISQUS THREAD */
 
