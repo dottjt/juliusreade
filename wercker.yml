@@ -5,7 +5,6 @@ build:
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
-        flags: --buildDrafts=true
 
 
 deploy:
