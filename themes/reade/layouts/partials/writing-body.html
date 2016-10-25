@@ -4,7 +4,7 @@
 <body>
 	<main class="container">	
  <ul>
-  {{ range .Site.Taxonomies.categories.writing }}
+  {{ range .Site.Taxonomies.categories.blog }}
     <li class="writing-list"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
   {{ end }}
 </ul>
