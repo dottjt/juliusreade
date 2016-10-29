@@ -574,14 +574,16 @@ CUSTOM CSS FILE IS HERE!
     display: flex;
     padding-top: 0.8rem;
     list-style-type: none;
-    align-items: center;
+    justify-content: center;
+    padding-left: 3.8rem;
     text-align: center;
+    flex-direction: row;
+    align-items: center;
     height: 7rem;
     font-size: 2.8rem;
     margin-bottom: 3rem;
     border-bottom: black solid 0.1rem;
     border-top: black solid 0.1rem;
-    font-
 }
 /*
 .nav-item1 {
@@ -627,6 +629,19 @@ CUSTOM CSS FILE IS HERE!
 }
 .about-title {
   font-size: 7rem;
+}
+
+.about-line {
+  border-bottom: 1px solid black; 
+}
+
+.about-top {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  
 }
 
 .services-list {
@@ -898,7 +913,7 @@ a {
     }
 
     li {
-        text-indent: -4.2rem;
+        text-indent: -4.8rem;
         padding-left: 1rem;
         line-height: 3.75rem; 
     }
