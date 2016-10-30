@@ -4,10 +4,14 @@
 <body>
 	<main class="container">	
  <ul>
+
   {{ range .Site.Taxonomies.categories.blog }}
-    <li class="writing-list standard-text-size"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    <li class="writing-list standard-text-size">
+      <img class="thumbnail" src="{{ Site.Params.thumbnail }}" alt="Hello there">
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
   {{ end }}
 </ul>
+
 
 
 	</main>
