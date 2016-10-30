@@ -947,7 +947,25 @@ a {
         line-height: 6rem;
     }
 
+
 }
+
+@media (max-width: 500px) {
+    .nav-item1 {
+      font-size: 2.5rem;
+    }
+
+    .nav-item2 {
+      font-size: 2.5rem;
+    }
+
+    .nav-item3 {
+      font-size: 2.5rem;
+    }
+
+
+}
+
 
 @media (min-width: 400px) {
 
