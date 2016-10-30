@@ -537,7 +537,9 @@ hr {
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
@@ -918,6 +920,25 @@ a {
     width: 33%;
 
 }
+
+@media (max-width: 950px) {
+
+  .writing-list {
+      width: 45%;
+  }
+
+}
+@media (max-width: 650px) {
+
+  .writing-list {
+      width: 85%;
+      margin: 0 auto;
+  }
+
+
+}
+
+
 
 .writing-thumbnail {
     max-width: 100%;
