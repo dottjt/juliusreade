@@ -3,12 +3,14 @@
   </a>
 <body>
 	<main class="container">	
- <ul>
+ <div class="writing-flex">
 
   {{ range .Site.Taxonomies.categories.blog }}
-    <li class="writing-list standard-text-size">
-      <img class="thumbnail" src="{{ Site.Params.thumbnail }}" alt="Hello there">
-      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    <div class="writing-list standard-text-size">
+      <img class="writing-thumbnail" src="{{ .Page.Params.thumbnail }}" alt="Hello there"></br>
+
+      <a class="writing-link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+    </div>
   {{ end }}
 </ul>
 

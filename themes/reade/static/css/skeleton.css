@@ -655,6 +655,7 @@ CUSTOM CSS FILE IS HERE!
 
 .services-aln {
   margin-bottom: 4rem;
+  line-height: 5rem;
 	width: 100%;
 	vertical-align: top;
 	display: inline-block;
@@ -782,7 +783,7 @@ a {
 @media (min-width: 1200px) {
     .fixed-aside {
     position: fixed;
-    padding: 6px;
+    padding: 5rem;
     transform: translateX(-34.333333%);
     left: 76%;
     }  
@@ -900,6 +901,25 @@ a {
 
 .writing-list {
     font-size: 2rem;
+    display: inline-block;
+    width: 33%;
+
+}
+
+.writing-thumbnail {
+    max-width: 100%;
+}
+
+.writing-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.writing-link {
+  display: block;
+  text-align: left;
 }
 
 
