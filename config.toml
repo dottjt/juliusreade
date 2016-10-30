@@ -1,4 +1,4 @@
-baseurl = "http://juliusreade.com/"
+baseurl = "https://juliusreade.com/"
 languageCode = "en-us"
 title = "Julius Reade: Somebody Please Help Me"
 theme = "reade"
@@ -6,7 +6,7 @@ theme = "reade"
 
 
 disqusShortname = "juliusreade"
-disqus_url = "https://juliusreade.disqus.com/"
+	disqus_url = "https://juliusreade.disqus.com/"
 
 
 [taxonomies]
