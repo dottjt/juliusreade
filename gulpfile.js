@@ -27,6 +27,7 @@ gulp.task('minic', () =>
         .pipe(gulp.dest('themes/reade/static/cssReal/'))
 );
 
+/*
 
 gulp.task('inc', () =>
     gulp.src('public/*.html')
@@ -34,9 +35,9 @@ gulp.task('inc', () =>
         .pipe(gulp.dest('public/'))
 );
 
+*/
+
 gulp.task('watch', function() {
 	gulp.watch('thumbnails/*', ['default']);
 	gulp.watch('themes/reade/static/css/skeleton.css', ['minic']);
-	gulp.watch('public/*.html', ['inc']);
-
 });
