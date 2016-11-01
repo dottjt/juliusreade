@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const cssnano = require('gulp-cssnano');
-const cssinline = require('gulp-inline-css');
+const cssinline = require('gulp-inline-style');
 
 
 /* This is split into two types of tasks:
