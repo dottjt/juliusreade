@@ -22,7 +22,7 @@ const cssinline = require('gulp-inline-css');
 /* This is for Wercker */
 
 gulp.task('minic', () =>
-    gulp.src('themes/reade/static/css/skeleton.css')
+    gulp.src('themes/reade/static/css/skeletonprop.css')
         .pipe(cssnano())
         .pipe(gulp.dest('themes/reade/static/cssReal/'))
 );

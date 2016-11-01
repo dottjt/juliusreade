@@ -8,7 +8,8 @@ build:
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
-
+    - hgen/gulp:
+        tasks: inc
 
 
 deploy:
