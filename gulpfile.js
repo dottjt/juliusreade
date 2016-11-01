@@ -3,7 +3,7 @@ const imagemin = require('gulp-imagemin');
 
 
  gulp.task('default', () =>
-    gulp.src('thumbnail/*')
+    gulp.src('thumbnails/*')
         .pipe(imagemin())
         .pipe(gulp.dest('static/img/blog/'))
 );

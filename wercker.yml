@@ -2,9 +2,9 @@ box: node
 
 build:
   steps:
+    - npm-install
     - hgen/gulp:
-        tasks: default
-
+        tasks: default minify
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
