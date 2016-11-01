@@ -8,8 +8,9 @@ build:
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
-    - hgen/gulp:
-        tasks: inc
+    - samueldebruyn/minify:
+        base_dir: public
+        threads: "3"
 
 
 deploy:
