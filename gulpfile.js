@@ -19,7 +19,6 @@ const cssinline = require('gulp-inline-css');
         .pipe(gulp.dest('static/img/blog/'))
 );
 
-
 /* This is for Wercker */
 
 gulp.task('minic', () =>
@@ -35,11 +34,9 @@ gulp.task('inc', () =>
         .pipe(gulp.dest('public/'))
 );
 
-
-
 gulp.task('watch', function() {
 	gulp.watch('thumbnails/*', ['default']);
 	gulp.watch('themes/reade/static/css/skeleton.css', ['minic']);
-	gulp.watch('js/*.js', ['inc']);
+	gulp.watch('public/*.html', ['inc']);
 
 });
