@@ -22,21 +22,24 @@ const cssinline = require('gulp-inline-css');
 
 /* This is for Wercker */
 
-gulp.task('minifycss', () =>
+gulp.task('minic', () =>
     gulp.src('themes/reade/static/css/skeleton.css')
         .pipe(cssnano())
-        .pipe(gulp.dest('themes/reade/static/css/final.css'))
+        .pipe(gulp.dest('themes/reade/static/cssReal/'))
 );
 
 
-gulp.task('inlinecss', () =>
-    return gulp.src('./*.html')
+gulp.task('inc', () =>
+    gulp.src('public/*.html')
         .pipe(cssinline())
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('public/'))
 );
 
 
 
 gulp.task('watch', function() {
 	gulp.watch('thumbnails/*', ['default']);
+	gulp.watch('themes/reade/static/css/skeleton.css', ['minic']);
+	gulp.watch('js/*.js', ['inc']);
+
 });

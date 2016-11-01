@@ -4,12 +4,12 @@ build:
   steps:
     - npm-install
     - hgen/gulp:
-        tasks: minifycss
+        tasks: minic
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
     - hgen/gulp:
-        tasks: inlinecss
+        tasks: inc
 
 
 
