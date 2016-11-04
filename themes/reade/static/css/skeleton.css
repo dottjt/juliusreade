@@ -165,12 +165,18 @@ html {
 
 .article-container {
    margin-top: 3rem; 
+   border-top: 1px solid cyan;
 }
 
-.blog-article-title {
-    margin-top: 3rem;
-    line-height: 7rem;   
 
+.blog-article-title {
+    font-weight: 800;
+    font-size: 20rem;
+    margin-top: 3rem;
+    line-height: 8rem;   
+}
+.content-container {
+    padding-left: 2rem;
 }
 
 .homepage-back {
@@ -193,6 +199,13 @@ html {
 
 .content p {
     padding-bottom: 1rem;
+}
+
+.content h3 {
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 8rem;
+    border-left: 1rem solid #FF00E1;
 }
 
 
@@ -235,6 +248,21 @@ a {
     .homepage-back-reveal {
       
     }
+
+
+
+
+
+/* GET RID OF THIS FOR FIXED-ASIDE */
+.fixed-aside {
+      display: none;
+}
+/* GET RID OF THIS FOR FIXED-ASIDE */
+
+
+
+
+
 
 
 /* main-aside collapse behaviour */
@@ -433,7 +461,9 @@ a {
         margin-top: 0rem;
         line-height: 6rem;
     }
-
+        .content h3 {
+        font-size: 4rem;
+    }
 
 }
 
