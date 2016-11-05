@@ -4,7 +4,7 @@ build:
   steps:
     - npm-install
     - hgen/gulp:
-        tasks: minic
+        tasks: inline
     - arjen/hugo-build:
         version: "0.16"
         theme: reade
