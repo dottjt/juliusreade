@@ -116,31 +116,29 @@ html {
 }
 
 .services-aln-container {
-  padding-top: 3rem;
-  margin: 0 auto;
-  width: 70%;
-  font-size: 2.2rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 2.2rem;
 	margin-bottom: 8em;
-
 }
 
 .services-aln {
-  margin-bottom: 4rem;
-  line-height: 5rem;
+    margin-bottom: 4rem;
+    line-height: 5rem;
 	width: 100%;
 	vertical-align: top;
 	display: inline-block;
 }
 
 .services-aln-bottom {
-  margin-bottom: -20rem;
+    margin-bottom: -20rem;
 }
 
 .podcast {
-  height: 25px;
+    height: 25px;
 	width: 25px;	
 	margin-right: 10px;
-
 }
 
 .services-list {
@@ -149,17 +147,16 @@ html {
 
 .standard-text-size {
     font-size: 2.4rem;
+    font-weight: 300;
 }
 
 .about-side-nav {
     font-size: 2.8rem;
-
 }
 
 .about-nav li {
     font-size: 3rem;
     padding-top: 1.5rem;
-
 }
 
 .about-container h3 {
@@ -284,14 +281,6 @@ a {
 
 }
 
-@media (max-width: 700px) {
-    .blog-article-title {
-        font-size: 12rem;
-        font-weight: 800;
-        line-height: 8rem;   
-    }
-
-}
 
 @media (max-width: 550px) {
     .blog-article-title {
@@ -300,7 +289,6 @@ a {
         font-weight: 800;
         line-height: 1rem;   
         padding-bottom: 0rem;
-
     }
 
 }
@@ -401,6 +389,7 @@ a {
     width:65.3333333333%;
 }
 
+
 .main-article-title {
     font-size: 4rem; 
     line-height: 6rem;   
@@ -408,6 +397,16 @@ a {
     margin-top: 1.7rem;
     text-align: center;
 }
+
+
+@media (max-width: 700px) {
+    .main-article-title {
+        font-size: 3rem;
+        line-height: 4.3rem;   
+
+    }
+}
+
 
 .thumbnail {
     width: 100%;
@@ -478,6 +477,7 @@ a {
 /* FOOTER */
 
 .footer {
+    font-weight: 300;
    margin-top: 4rem; 
    margin-bottom: 2rem;  
 }
