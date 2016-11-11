@@ -476,10 +476,17 @@ a {
 
 /* FOOTER */
 
-.footer {
-    font-weight: 300;
+.footer-article {
+   font-weight: 200;
    margin-top: 4rem; 
    margin-bottom: 2rem;  
+}
+
+.footer-home {
+   font-weight: 200;
+   margin-top: 4rem; 
+   margin-bottom: 2rem;  
+   text-align: center;
 }
 
 /* apply to all */
