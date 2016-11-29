@@ -180,9 +180,22 @@ html {
 }
 
 .cross-post-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
-    height: 4rem;
-    background: red;
+    height: 15rem;
+    border: 1rem solid #00a1ff; 
+    border-radius: 2rem;
+}
+
+.cross-post-template-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .homepage-back {
