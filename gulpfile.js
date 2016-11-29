@@ -22,13 +22,13 @@ const inlinesource = require('gulp-inline-source');
         .pipe(gulp.dest('static/img/blog/'))
 );
 
-/*
+
   gulp.task('inline', () =>
     gulp.src('public/*')
         .pipe(inlinesource())
         .pipe(gulp.dest('public/'))
 );
-*/
+
 
 
 /* This is for Wercker 
