@@ -1,11 +1,11 @@
 l  - Why intuitive explanations are incredibly fucking important 1. 10-30-16
 a  - What It Means To Be A Porn Addict 5. 13-11-16
 c  - Why Getting A Full-Time Job Should Be Your Number One Priority 79. 27-11-16
-s  - Smart People Don't Think. 7. 11-12-16
+s  - Smart People Don't Think. They Plan Ahead 7. 11-12-16
+pp - You don’t need anyone’s permission to help yourself 11. 25-12-16 
 
-pl - Here’s why you keep failing: You Do Not Plan Ahead 9. 25-12-16
 d  - A Simple and Intuitive Guide to Understanding Your Depression 2. 08-01-17
-pp - You don’t need anyone’s permission to help yourself 11. 22-01-17
+					22-01-17
 pr - Please, Please, Please Stop Abusing Your Hands 12. 05-02-17
 a  - The Biggest Thing That Impacted My Development As A Child 38. 19-02-17
 l  - A laptop is the best investment you can make 14. 02-03-17
@@ -14,8 +14,8 @@ pp - The personal philosophy I rely on most 15. 30-03-17
 s  - Your goal in life is to make it feel real 21.
 f  - An optimal guide on maintaining your energy to produce success 13.
 d  - The only safe way to rationalise your depression 16.
-c  - What you should have done at University 17.
-l  - An intuitive guide to learning 59.
+c  - What you ideally should have done at University 17.
+pl - Here’s why you keep failing: You Do Not Plan Ahead 9. 
 pp - You probably shouldn’t steal, but read this anyway 18.
 ex - The paleo diet: Just do it 87. 
 pl - A meta-discussion on why your life didn’t go to plan 19.
@@ -23,6 +23,7 @@ c  - A millenial's guide to finding a job 20.
 s  - Talent is a pure numbers game, stupid 22.
 d  - Estrangement: The most important word no-one knows 84. 
 a  - Being funny prevents you from being a freak 47.
+l  - An intuitive guide to learning 59.
 r  - The mental illness dating strategy 24. 
 pl - How to maintain scope of your life 10. 
 f  - Without focus, you're literally a useless bunny 3. 
@@ -74,12 +75,18 @@ s  - Why vulnerability is an advantage 85.
 r  - Success works a lot better when you have a loving partner 73.
 a  - What was your turning point? 55"
 l  - Seriously, learn absolutely anything 52.
-- 
-- 
-- 
-- 
-- 
-- 
+a  - Why WEED is the best drug to start with 88. 
+a  - The experience of a 25i-nBome junkie 91. 
+m  - Self-awareness made super, super easy 90. 
+l  - A guide on how to study on public transport 92. 
+a  - I never learnt what love was about 93.
+r  - Why men resort to pick up artistry 96.
+d  - It’s okay to feel uncomfortable 97.
+pp - Your shitty genes are a huge advantage 99. 
+s  - Buckle up: Being an adult doesn’t get any easier 94. 
+
+
+
 - 
 - 
 -
