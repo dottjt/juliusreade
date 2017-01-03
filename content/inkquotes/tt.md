@@ -10,8 +10,8 @@ slug = ""
 title = ""
 
 thumbnail = ""
-thumbnailalt = "Suggested Websites"
+thumbnailalt = "A struggling young man, trying to find love"
 
-description = "Inkquotes 2008."
+description = "Inkquotes 2013."
 
 +++

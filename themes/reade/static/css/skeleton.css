@@ -78,6 +78,13 @@ html {
     margin-bottom: 3rem;
 }
 
+#writing-menu {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    margin-bottom: 0;
+}
+
 
 /* ABOUT & SERVICES */
 
@@ -411,7 +418,10 @@ a {
     .main-article-title {
         font-size: 3rem;
         line-height: 4.3rem;   
+    }
 
+    #writing-menu {
+        display: none;
     }
 }
 
@@ -442,29 +452,23 @@ a {
 .writing-list {
     font-size: 2rem;
     font-weight: 300;
-    display: inline-block;
     width: 32.5%;
-
 }
 
 @media (max-width: 950px) {
 
   .writing-list {
       width: 45%;
+      margin: 0 auto;
   }
 
 }
 @media (max-width: 650px) {
-
   .writing-list {
       width: 85%;
       margin: 0 auto;
   }
-
-
 }
-
-
 
 .writing-thumbnail {
     max-width: 100%;
@@ -472,15 +476,41 @@ a {
 
 .writing-flex {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
+    flex-wrap: wrap;
 }
 
-.writing-link {
-  display: block;
-      text-align: center;
 
+.writing-link {
+ display: block;
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+#adelaidesucks {
+    width: 100%;
+}
+
+.writing-link-text {
+    display: block;
+    float: left;
+    padding-left: 5rem;
+    font-weight: 300;
+    width: 100%;
+    font-size: 2rem;
+    height: 4rem;
+}
+
+.blog-intro-container {
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.blog-intro {
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
 }
 
 

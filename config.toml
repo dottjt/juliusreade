@@ -6,18 +6,22 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 description = "Your Digital Heart Attack. Something Fancy Like Cheap Roses."
 
 
-[author]
-	name = "Julius Reade"
-
 disqusShortname = "juliusreade"
 	disqus_url = "https://juliusreade.disqus.com/"
 
 
-[taxonomies]
-tag = "tags"
-category = "categories"
 
+[author]
+	name = "Julius Reade"
+
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+  
 
 [permalinks]
-  blog = "/:year/:month/:day/:title/"
+	blog = "/:year/:month/:day/:title/"
+	adelaidesucks = "/adelaidesucks/:title/"
+
 
