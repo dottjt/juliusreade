@@ -75,7 +75,7 @@ html {
 
 .social-container {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #writing-menu {
@@ -186,6 +186,14 @@ html {
     padding-left: 2rem;
 }
 
+.blog-footer-bottom {
+
+}
+
+.blog-footer-bottom-text {
+
+}
+
 .cross-post-template {
     display: flex;
     align-items: center;
@@ -286,14 +294,25 @@ a {
 
 /* main-aside collapse behaviour */
 @media (max-width: 900px) {
+
     .blog-article-title {
         font-size: 15rem;
         font-weight: 800;
         line-height: 8rem; 
         padding-bottom: 2rem;
-
     }
 
+    #writing-menu {
+        margin: 2rem auto;
+        position: relative;
+        display: block;
+        width: 230px;
+    }
+
+    .social-container {
+        text-align: center;
+        margin-bottom: 1.8rem;
+    }
 }
 
 
@@ -389,13 +408,33 @@ a {
 .main-image {
     padding-top: 1rem;  
     padding-bottom: 2.22rem;  
-
+    float: left;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
 }
+
+.main-image-blog-footer-bottom {
+    padding-top: 1rem;  
+    padding-bottom: 2.22rem;  
+    float: left;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: block;
+}
+
+.blog-footer-bottom-text {
+    display: block;
+    border-radius: 1rem;
+    padding: 4rem;
+    border: 1px solid cyan;
+    margin-bottom: 7rem;
+    font-weight: 300;
+}
+
 
 /* MAIN */
 
@@ -420,9 +459,7 @@ a {
         line-height: 4.3rem;   
     }
 
-    #writing-menu {
-        display: none;
-    }
+ 
 }
 
 
