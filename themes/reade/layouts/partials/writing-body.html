@@ -11,9 +11,9 @@
      {{ range .Site.Taxonomies.categories.blog }}
 
       <div class="writing-list standard-text-size">
-        <img class="writing-thumbnail" src="{{ .Page.Params.thumbnail }}" alt="Hello there"></br>
+        <a class="writing-link" href="{{ .Page.RelPermalink }}"><img class="writing-thumbnail" src="{{ .Page.Params.thumbnail }}" alt="Hello there"></br>
 
-        <a class="writing-link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+        {{ .Page.Title }}</a>
 
       </div>
       {{ end }}
