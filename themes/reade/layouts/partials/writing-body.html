@@ -29,20 +29,21 @@
                   </h2>
 
                   <h2 class="blog-intro">
-                    It is honestly some of the worst writing you will ever read. 
+                    Honestly, some of the worst writing you will ever read. 
                   </h2>
 
-                  <h2 class="blog-intro">
-                    Posts are released bi-weekly. 
-                  </h2>
             </div>
-                  
+
+
+          <div class="adelaidesucks-writing-link-box">
           {{ range .Site.Taxonomies.categories.adelaidesucks }}
 
             <a class="writing-link-text" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Page.Date.Format "2006-01-02" }})</a>
-          </div>
           {{ end }}
-              
+
+          </div>
+        </div> <!-- end of adelaidesucks container -->
+
         </div>
 
 </main>
