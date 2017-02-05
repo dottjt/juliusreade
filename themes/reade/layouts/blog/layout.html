@@ -32,8 +32,12 @@
     <p class="blog-footer-bottom-text content">
         My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
     </p> 
-             
 
+{{ partial "bottom-blog-body.html" .}}
+    
+{{ template "_internal/disqus.html" . }}
+
+</div>
 
 </section>
 <!--
@@ -42,7 +46,20 @@
 </div>
 -->
 
-       
+
+<!--
+
+    <div>       
+      <h2>My list of posts:</h2>
+     {{ range .Site.Taxonomies.categories.blog }}
+
+      <div class="standard-text-size">
+        <a style="text-align: left;" class="" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></br>
+      </div>
+      {{ end }}
+    </div>
+
+      --> 
 <!--
       <p class="blog-footer-bottom-text">
         My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
@@ -52,7 +69,6 @@
  -->
 
 
-{{ template "_internal/disqus.html" . }}
 
   </div>
 <script id="dsq-count-scr" src="//juliusreade.disqus.com/count.js" async></script>
