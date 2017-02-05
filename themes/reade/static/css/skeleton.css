@@ -486,7 +486,9 @@ a {
 
 /* Writing */
 
-
+#writing {
+    margin-bottom: 3rem;
+}
 
 
 .writing-list {
