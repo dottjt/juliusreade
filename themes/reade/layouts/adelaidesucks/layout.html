@@ -28,12 +28,34 @@
     <div class="content">
       {{ .Content }}
     </div>
+
+
+    <p class="blog-footer-bottom-text content">
+        My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
+    </p> 
+      
+
+      <!--
+  
+  <div id="writing adelaidesucks-writing-link-box">
+    <h2>Adelaidesucks articles:</h2>
+
+      {{ range .Site.Taxonomies.categories.adelaidesucks }}
+
+      <div class="writing-list standard-text-size">
+      <a style="text-align: left; width: 100%;" class="writing-link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}({{ .Page.Date.Format "2006-01-02" }})</a>
+
+      </div>
+      {{ end }}
+  </div>
+-->
 </section>
 <!--
 <div class="aside-article-remove">
      {{ partial "aside-article.html" . }}
 </div>
 -->
+
 
 {{ template "_internal/disqus.html" . }}
 

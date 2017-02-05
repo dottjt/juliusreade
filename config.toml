@@ -20,6 +20,6 @@ disqusShortname = "juliusreade"
 
 [permalinks]
 	blog = "/:year/:month/:day/:title/"
-	adelaidesucks = "/adelaidesucks/:title/"
+	adelaidesucks = "adelaidesucks/:title/"
 
 

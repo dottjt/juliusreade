@@ -32,9 +32,23 @@
     <p class="blog-footer-bottom-text content">
         My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
     </p> 
+      
 
-{{ partial "bottom-blog-body.html" .}}
-    
+
+      <!-- Where the posts begin -->
+  <div id="writing" class="writing-flex">
+
+      {{ range .Site.Taxonomies.categories.blog }}
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="{{ .Page.RelPermalink }}"><img class="writing-thumbnail" src="{{ .Page.Params.thumbnail }}" alt="Hello there"></br>
+
+      {{ .Page.Title }}</a>
+
+      </div>
+      {{ end }}
+  </div>
+
 {{ template "_internal/disqus.html" . }}
 
 </div>
