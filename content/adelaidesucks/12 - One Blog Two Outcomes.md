@@ -5,7 +5,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-11-14T21:52:30+09:34"
-draft = true
+draft = false
 slug = "one-blog-two-outcomes"
 title = "One Blog. Two Outcomes."
 
