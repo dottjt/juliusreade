@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-11-15T21:52:30+09:34"
-draft = true
+draft = false
 slug = "role-model-for-2007"
 title = "Role model for 2007."
 
