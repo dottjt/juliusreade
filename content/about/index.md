@@ -9,8 +9,3 @@ layout = "layout"
 
 #About
 
-rst rst 
-
-rs tsr strst 
-
-

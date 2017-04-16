@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-11-18T10:18:30+09:34"
-draft = true
+draft = false
 slug = "save-as-a-draft"
 title = "Save as a draft"
 
