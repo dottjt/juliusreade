@@ -5,7 +5,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-11-19T18:23:30+09:34"
-draft = true
+draft = false
 slug = "why-the-hell-is-it-so-hot-and-this-time-it-isnt-me"
 title = "Why the hell is it so hot? (And this time it isn't me)"
 
