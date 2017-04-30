@@ -5,7 +5,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-11-26T11:30:30+09:34"
-draft = true
+draft = false
 slug = "history-channel-battle-of-the-pacific-review"
 title = "History Channel - Battle of the Pacific : Review"
 
