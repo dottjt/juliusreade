@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-12-23T19:48:30+09:34"
-draft = true
+draft = false
 slug = "reading-is-the-number-one-source-of-death-in-the-usa"
 title = "Reading is the no. 1# source of death in the USA *"
 

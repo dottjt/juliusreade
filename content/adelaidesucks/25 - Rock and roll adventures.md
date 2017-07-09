@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2007-12-22T11:02:30+09:34"
-draft = true
+draft = false
 slug = "rock-and-roll-adventures-review"
 title = "Rock and Roll Adventures: Review"
 

@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2008-01-11T13:33:30+09:34"
-draft = true
+draft = false
 slug = "rove-the-script-they-didnt-play-to-air"
 title = "Rove: The script they didn't play to air."
 
