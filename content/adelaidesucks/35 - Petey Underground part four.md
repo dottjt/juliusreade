@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2008-01-26T14:48:30+09:34"
-draft = true
+draft = false
 slug = "pete-underground-part-four"
 title = "Petey Underground [Part 4]"
 

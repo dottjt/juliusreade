@@ -6,7 +6,7 @@ categories = [ "adelaidesucks" ]
 keywords = "adelaidesucks"
 layout = "layout"
 date = "2008-01-21T12:33:30+09:34"
-draft = true
+draft = false
 slug = "still-writing-articles-that-make-just-as-much-sense-as-anime"
 title = "Still writing articles that make just as much sense as anime"
 
