@@ -6,7 +6,7 @@ categories = [ "melbournesucks" ]
 keywords = "melbournesucks"
 layout = "layout"
 date = "2008-06-29T16:15:30+09:34"
-draft = true
+draft = false
 slug = "i-hate-anime-part-eight"
 title = "I hate anime.............. [Part 8]"
 

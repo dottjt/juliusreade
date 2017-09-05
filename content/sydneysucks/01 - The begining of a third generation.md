@@ -6,7 +6,7 @@ categories = [ "melbournesucks" ]
 keywords = "melbournesucks"
 layout = "layout"
 date = "2008-06-28T18:02:30+09:34"
-draft = true
+draft = false
 slug = "the-beginning-of-a-third-generation"
 title = "The begining of a third generation"
 

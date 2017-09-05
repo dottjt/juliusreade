@@ -6,7 +6,7 @@ categories = [ "melbournesucks" ]
 keywords = "melbournesucks"
 layout = "layout"
 date = "2008-06-29T17:05:30+09:34"
-draft = true
+draft = false
 slug = "the-missing-words"
 title = "The missing words"
 
