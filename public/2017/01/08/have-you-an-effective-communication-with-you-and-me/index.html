@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}.container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}.column,.columns,.container{width:100%;box-sizing:border-box}.column,.columns{float:left}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:900px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%;max-width:440px}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4rem;line-height:1.2}h1,h2{letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type=button],input[type=reset],input[type=submit]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:focus,.button:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type=button].button-primary,input[type=reset].button-primary,input[type=submit].button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:focus,.button.button-primary:hover,button.button-primary:focus,button.button-primary:hover,input[type=button].button-primary:focus,input[type=button].button-primary:hover,input[type=reset].button-primary:focus,input[type=reset].button-primary:hover,input[type=submit].button-primary:focus,input[type=submit].button-primary:hover{color:#fff;background-color:#1eaedb;border-color:#1eaedb}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type=checkbox],input[type=radio]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:400}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}.button,button{margin-bottom:1rem}fieldset,input,select,textarea{margin-bottom:1.5rem}blockquote,dl,figure,form,ol,p,pre,table,ul{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}
+  </style>
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  
+  <meta name="description" content="Communication is an important topic. So important, that I am here today to tell you about how truly important it is - Julius Reade">
+  <meta name="author" content="Julius Reade">
+  <meta name="keywords" content="[communication, effective communication, honest communication, communicating honestly, healthy relationships, loving relationships]">
+
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85083093-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+  
+
+<meta property="og:title" content="Have You An Effective Communication With You And Me">
+<meta property="og:description" content="Communication is an important topic. So important, that I am here today to tell you about how truly important it is - Julius Reade">
+<meta property="og:image" content="https://juliusreade.com/img/blog/06.png">
+<meta property="og:url" content="https://juliusreade.com/2017/01/08/have-you-an-effective-communication-with-you-and-me/">
+<meta property="og:site_name" content="Julius Reade: Have You An Effective Communication With You And Me">
+
+
+<meta name="twitter:title" content="Have You An Effective Communication With You And Me ">
+<meta name="twitter:description" content="Communication is an important topic. So important, that I am here today to tell you about how truly important it is - Julius Reade">
+<meta name="twitter:image" content="https://juliusreade.com/img/blog/06.png">
+<meta name="twitter:site" content="@JuliusReade">
+<meta name="twitter:creator" content="@JuliusReade">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Have You An Effective Communication With You And Me">
+
+
+<link rel="preconnect" href="juliusreade.com/services">
+<link rel="preconnect" href="juliusreade.com/about">
+<link rel="preconnect" href="juliusreade.com/writing">
+  
+  <title>Julius Reade | Have You An Effective Communication With You And Me</title>
+
+</head>
+
+<body>
+  <div class="container article-container">
+
+<section class="column content-width">
+  
+  <a class="homepage-back" href="/">
+  <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M11.262,16.714l9.002,8.999  c0.395,0.394,1.035,0.394,1.431,0c0.395-0.394,0.395-1.034,0-1.428L13.407,16l8.287-8.285c0.395-0.394,0.395-1.034,0-1.429  c-0.395-0.394-1.036-0.394-1.431,0l-9.002,8.999C10.872,15.675,10.872,16.325,11.262,16.714z" fill="#121313" fill-rule="evenodd" id="Chevron_Right"/><g/><g/><g/><g/><g/><g/></svg>
+  </a>
+  
+
+    <h1 class="blog-article-title"><a href="/2017/01/08/have-you-an-effective-communication-with-you-and-me/">Have You An Effective Communication With You And Me</a></h1>
+    <h3>By Julius Reade </h3> 
+    
+    <div class="social-container-article"><a class="social1000" href="https://www.twitter.com/dottjt"><span ><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook"><g><path d="M511.992,256.008c0,141.387-114.6,255.98-255.988,255.98c-141.396,0-255.996-114.594-255.996-255.98    C-0.004,114.619,114.607,0.012,255.996,0.012C397.393,0.012,512,114.619,511.992,256.008z" fill="#2556A0"/><path d="M265.074,370.74l-47.757,47.764l88.585,88.594c104.943-20.734,186.832-105.563,203.129-212.029    L329.073,115.104L183.068,288.725L265.074,370.74z" opacity="0.15"/></g><g id="Facebook_1_"><g><path d="M277.996,233.047l0.008-49.664h0.047c-0.039-0.344-0.047-0.672-0.055-1.023     c0-6.43,5.211-11.648,11.633-11.648h39.444l-0.008-20.055l0.008-7.742v-27.811h-58.147l-0.008,0.188     c-30,2.313-53.601,27.389-53.601,57.967v59.797l-34.397-0.008v55.631h34.397v129.826h60.679V281.99h39.5l6.163-48.943H277.996z" fill="#F4F6F9"/></g></g></g></svg></a>
+</a>    
+</span>
+<a class="social1000" href="https://www.facebook.com/julius.reade"><span ><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="twitter"><g><path d="M511.994,256c0,141.387-114.6,255.996-255.988,255.996c-141.4,0-256-114.609-256-255.996    c0-141.389,114.6-255.996,255.992-255.996C397.395,0.004,512.002,114.611,511.994,256z" fill="#00B7EB"/><path d="M185.563,250.859l-40.391,40.389l29.781,29.781l-11.938,11.953l44.288,44.281l-6.336,6.734l-87.187-6.719    l134.521,134.514c2.563,0.078,5.117,0.203,7.703,0.203c137.998,0,250.426-109.203,255.738-245.904L408.801,163.148    L258.045,323.342L185.563,250.859z" opacity="0.1"/></g><path d="M417.191,187.797c-11.172,4.938-23.156,8.281-35.758,9.797   c12.852-7.703,22.719-19.906,27.367-34.445c-12.016,7.133-25.352,12.305-39.516,15.102c-11.359-12.109-27.538-19.656-45.444-19.656   c-34.374,0-62.241,27.859-62.241,62.266c0,4.875,0.547,9.625,1.609,14.188c-51.733-2.609-97.592-27.375-128.295-65.063   c-5.375,9.203-8.438,19.906-8.445,31.313c0.008,21.609,11,40.656,27.703,51.828c-10.203-0.328-19.797-3.125-28.203-7.781   c0,0.25,0,0.516,0,0.766c0,30.186,21.461,55.342,49.938,61.092c-5.219,1.406-10.734,2.156-16.398,2.156   c-4.023,0-7.922-0.375-11.719-1.094c7.93,24.734,30.922,42.734,58.14,43.234c-21.296,16.688-48.124,26.656-77.296,26.656   c-5.023-0.016-9.98-0.281-14.852-0.875c27.555,17.67,60.266,27.998,95.421,27.998c114.506,0,177.099-94.904,177.099-177.215   c0-2.672-0.055-5.375-0.164-8.047C398.285,211.234,408.84,200.266,417.191,187.797z" fill="#F4F6F9" id="Twitter_2_"/></g></svg></a>
+</a>
+</span>
+<a class="social1000"href="https://github.com/dottjt/julius">      <span><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="github_1_"><g><path d="M511.994,256c0,141.387-114.607,255.988-256.004,255.988C114.613,511.988,0.006,397.387,0.006,256    c0-141.381,114.6-255.988,255.992-255.988C397.379,0.012,511.994,114.619,511.994,256z" fill="#3C3C3C"/><path d="M173.719,267.975l-45.68,0.695l-13.988,2.391l8.863,8.867l-4.77,2.266l64.465,64.477l-1.867,1.875    l50.475,50.482l-2.141,2.367l-11.39,4.055l99.202,99.195c96.826-23.633,172.027-102.305,190.613-201.021L347.638,143.758    L188.055,277.959L173.719,267.975z" opacity="0.2"/></g><path d="M416.918,271.068l0.273-2.773c-16.859-1.617-33.633-1.758-49.93-0.539   c2.625-8.258,3.992-17.584,3.891-28.186c-0.211-22.547-7.813-40.086-19.757-54.656c2.304-13.727,0.586-27.438-3.758-41.156   c-17.078,1.375-32.444,6.891-46.124,16.508c-25.578-5.141-51.141-5.461-76.727-0.008c-15.96-10.641-31.632-15.867-47.053-16.5   c-4.578,15.102-5.281,30.008-1.43,44.648c-13.445,14.117-18.594,31.258-18.336,50.227c0.133,10.875,1.836,20.529,4.953,29.076   c-16.047-1.164-32.539-1.016-49.129,0.594l0.258,2.758c16.91-1.617,33.707-1.75,50.012-0.484c0.602,1.438,1.219,2.859,1.891,4.242   c-17.672-0.461-33.594,1.055-48.48,4.672l0.672,2.703c15.121-3.664,31.324-5.141,49.418-4.539   c11.953,21.008,34.983,33.352,68.529,37.266c-7.805,6.242-11.984,13.633-13.054,21.984c0,0-3.539,0-17.758,0   c-23.866-0.008-30.374-30.07-55.085-27.102c23.969,11.758,19.195,49.297,57.546,49.297c12.891,0.008,15.641,0.008,16.109,0.008   v34.404c0.18,5.57-2.273,9.289-6.227,11.867c13.726,1.375,24.062-5.398,24.062-13.727c0-8.311,0-41.443,0-45.475   c0-4.07,4.297-4.383,4.297-4.383v53.107c0.164,5.305-2.43,8.313-5.188,11.18c12.109,0.469,23.492-1.914,24-12.102   c0,0,0.008-48.264,0.008-50.834c0-2.547,4.234-2.617,4.234,0c0,2.625,0,48.451,0,48.451c0.125,8.586,7.617,15.563,23.516,14.484   c-4.227-3.398-5.547-6.805-5.547-11.758c0-4.945,0-52.529,0-52.529s4.383-0.219,4.383,4.383c0,4.563,0,36.625,0,44.279   c0,9.875,11.984,13.953,25.656,13.555c-4.469-3.313-7.531-7.273-7.531-12.555v-53.279c-0.477-7.828-3.688-15.234-10.016-22.094   c30.655-4.656,52.756-16.766,63.764-38.43c18.156-0.617,34.398,0.859,49.586,4.547l0.664-2.711   c-15.023-3.641-31.07-5.164-48.922-4.68c0.625-1.375,1.242-2.742,1.758-4.195C382.848,269.303,399.832,269.436,416.918,271.068z    M160.922,314.279c-0.758,0-1.383-0.43-1.383-0.938c0-0.531,0.625-0.961,1.383-0.961c0.742,0,1.367,0.43,1.367,0.961   C162.289,313.857,161.664,314.279,160.922,314.279z M165.203,317.186c-0.82,0-1.516-0.469-1.516-1.07   c0-0.578,0.688-1.047,1.516-1.047c0.836,0,1.508,0.469,1.508,1.055C166.719,316.717,166.047,317.186,165.203,317.186z    M169.563,320.943c-0.984,0-1.766-0.555-1.766-1.234c0-0.711,0.766-1.266,1.766-1.266c0.984,0,1.781,0.563,1.781,1.258   S170.547,320.943,169.563,320.943z M173.805,325.451c-1.148,0-2.086-0.648-2.086-1.453s0.938-1.445,2.086-1.445   c1.141,0,2.086,0.641,2.086,1.453C175.891,324.811,174.945,325.459,173.805,325.451z M178.453,330.568   c-1.266,0-2.305-0.734-2.305-1.625s1.039-1.625,2.305-1.625c1.297,0,2.328,0.734,2.328,1.633   C180.781,329.834,179.75,330.568,178.453,330.568z M183.859,335.756c-1.414,0-2.555-0.813-2.563-1.797   c0.008-1.008,1.148-1.813,2.563-1.813c1.43,0,2.563,0.813,2.578,1.813C186.422,334.943,185.297,335.748,183.859,335.756z    M191.164,340.678c-1.57,0.008-2.852-0.891-2.852-2c-0.008-1.109,1.281-2,2.852-2c1.577,0,2.851,0.891,2.851,2   S192.741,340.678,191.164,340.678z M200.218,343.326c-1.563,0-2.867-0.906-2.867-2.008c0-1.094,1.305-2.008,2.867-2.008   c1.57,0,2.867,0.906,2.867,2.008S201.788,343.326,200.218,343.326z M209.765,343.615c-1.578-0.008-2.859-0.891-2.859-1.984   c0-1.125,1.281-2.016,2.859-2.016s2.836,0.891,2.836,2.016C212.601,342.725,211.343,343.607,209.765,343.615z M219.187,343.803   c-1.563,0.008-2.852-0.891-2.852-2.008c0-1.094,1.273-1.992,2.852-2c1.57,0.008,2.852,0.898,2.852,2   C222.038,342.912,220.757,343.803,219.187,343.803z" fill="#F4F6F9" id="Github_1_"/></g></svg></a>
+</a>
+</span>
+
+</div>
+		<h6 class="subtitle is-6">January 8, 2017</h6>
+
+    <div class="content">
+      
+
+<!-- 
+Have You An Effective Communication With You And Me
+Let's Make Effective Communication Together.
+Let's Make Effective Communication A Thing
+Honest Communication Makes You Less Psychopathic
+Honest Communication Isn't A Band-Aid Solution.
+Primer On Effective Communication
+You Should Value Effective Communication
+Have You A Communication With You And Me
+How Not To Be A Terrible Communicator 
+Let's discuss honest communication. 
+Communicate Effectively With Me (And You)
+Communicate With Me You Klutz
+Honest Communication Is Effective Communication
+-->
+
+<!-- Let's make effective communication a thing. -->
+
+<p>Let&rsquo;s talk communication.</p>
+
+<p>You know, that one thing many of us fail at miserably.</p>
+
+<p>&ldquo;Great forehead bro, cause it makes me wanna cream like fat Tuesday&rdquo;.</p>
+
+<p>If it&rsquo;s one thing I&rsquo;ve learnt it&rsquo;s that all our traumatic experiences and toxic relationships in life can be attributed to this thing called &lsquo;communcation&rsquo;.</p>
+
+<p>&hellip;or precisely, lack thereof.</p>
+
+<p>When we lack communication between people, we create a number of  false assumptions and expectations.</p>
+
+<p>That crush us when we realise they&rsquo;re not who we think they are.</p>
+
+<p>And when we lack communication with our own thoughts, ideas and beliefs.</p>
+
+<p>We can become even more deluded, in a quest to believe what isn&rsquo;t actually real.</p>
+
+<p>Whether through insecurity, ignorance or misunderstanding, we somehow manage to become monsters.</p>
+
+<p>Absolute monsters.</p>
+
+<p>Because I guarantee my life would&rsquo;ve turned out much differently if I&rsquo;d learnt to communicate effectively as a child.</p>
+
+<p>In a world where I didn&rsquo;t feel compelled to maintain a false image of who I should be.</p>
+
+<p>Instead, I&rsquo;ve had to deal with several decades&rsquo; worth of awkwardness and destructive relationships.</p>
+
+<p>And even now, I&rsquo;m still a bit of a tard.</p>
+
+<p>I still take things personally.</p>
+
+<p>I&rsquo;m still a bit controlling and unempathetic at the best of times.</p>
+
+<p>But the main thing is that I&rsquo;m focused, and I communicate honestly and openly with myself</p>
+
+<p>Including with the people around me.</p>
+
+<p>Well, at least I try.</p>
+
+<p>&ldquo;I want to milk your cancer with my tongue&rdquo;.</p>
+
+<p>Though as you may tell, I often fail to take things seriously enough to convey this honesty.</p>
+
+<p>&hellip;and that&rsquo;s part of the fun of understanding effective communication.</p>
+
+<p>In particular, I want us to be able to identify and avoid dishonest communication.</p>
+
+<p>Not only with ourselves, however also with others.</p>
+
+<p>Because for a lot of us, dishonest communication is all we know and can identify with.</p>
+
+<p>So let&rsquo;s buckle the trend.</p>
+
+<!-- ...or I'll murder your family.  -->
+
+<h3 id="communication-is-important">Communication Is Important</h3>
+
+<p><img src="/img/blog/06-01.png" alt="Communication Is Important" /></p>
+
+<p>I would argue that being able to communicate effectively is one of life&rsquo;s most important skills.</p>
+
+<p>A skill that all of us struggle with to some degree.</p>
+
+<p>Effective communication is vital from the point of view of success, because it allows us unrequited access to future opportunity.</p>
+
+<p>Not as a means of dominance, but as a means of understanding.</p>
+
+<p>And with this understanding, relate and familiarise ourselves with others, in order to a create connection, as well as develop empathy and trust.</p>
+
+<p>Therefore with effective communication we can convince others to listen to us, to buy our products or simply be our friends.</p>
+
+<p>Which is what makes it important, right?</p>
+
+<p>Incorrect.</p>
+
+<p>Firstly, there&rsquo;s this misconception that effective communication is about helping you obtain what you want.</p>
+
+<p>As a way to appease others and lure them into your sex dungeon, only to be murdered for the next Monday&rsquo;s sacrificial lamb.</p>
+
+<p>First and foremost, effective communication is about learning to be comfortable with expressing yourself freely.</p>
+
+<p>That is, your true, unfiltered, somewhat rediculous self.</p>
+
+<p>The primary reason being that by not pursing that person, you are likely communicating for all the wrong reasons.</p>
+
+<p>Which is how we end up sad and depressed.</p>
+
+<p>Wait a second.</p>
+
+<p>So you haven&rsquo;t binged an entire 2kg tray of lasanga and stick of garlic bread?</p>
+
+<p>The reason this type of communication is ineffective - the kind of communication that we design to manipulate people - is because it is not honest.</p>
+
+<p>And without that element of honesty, you remove your ability to hold yourself accountable.</p>
+
+<p>Which doesn&rsquo;t seem like a big deal if it&rsquo;s being dishonest towards others, however humans can very rarely that kind of dishonesty without being dishonest to themselves.</p>
+
+<p>Otherwise, if it were possible to lie honestly, none of us would be depressed, overweight or saddled in guilt or delusion.</p>
+
+<p>Instead of doing what you set out to do, like achieve your goals and dreams, you instead delude yourself into believing you&rsquo;re invulnerable on your current path.</p>
+
+<p>You justify slacking off and maintaining destructive behaviours. You justify lying to others in order to gain their trust.</p>
+
+<p>In the process, detaching yourself from how you truly feel about yourself and others - leaving you hollow and full of spitei</p>
+
+<p>Then it&rsquo;s only once you reach a certain point, where you become so detached and realise that you&rsquo;re so far from who you said you would become, that everything falls apart.</p>
+
+<p>We&rsquo;ve all been there.</p>
+
+<p>It&rsquo;s not great.</p>
+
+<h3 id="identifying-dishonest-communication">Identifying Dishonest Communication</h3>
+
+<p><img src="/img/blog/06-02.png" alt="Identifying Dishonest Communication" /></p>
+
+<p>Effective communication on the other hand is visible, honest and free-flowing.</p>
+
+<p>It is what allows us to feel safe and comfortable, and not worry about hiding who we really are.</p>
+
+<p>It is what allows our thoughts and ideas to be exchanged and understood at a greater rate, without resistance.</p>
+
+<p>More importantly, with those who actually matter in our lives.</p>
+
+<p>It is these things that allow for a high standard of communication, which is why it is imperative that we pursue them.</p>
+
+<p>So rather than live in denial, we&rsquo;re going to identify the ways in which we lie to ourselves.</p>
+
+<p>In other words, promote dishonest communication.</p>
+
+<p>In a lot of cases it can be blatantly obvious.</p>
+
+<p>We constantly feel terrible about ourselves. We feel guilty. We know we&rsquo;re wrong.</p>
+
+<p>Yet we don&rsquo;t quite feel &ldquo;ready&rdquo; to change.</p>
+
+<p>For some of us we can become so blinded by our own fears and insecurities, that we can&rsquo;t help but feel compelled to lie to protect ourselves.</p>
+
+<p>In other cases, we can be completely benign to our destructive behaviours.</p>
+
+<p>When all we know is dishonest communication, we can normalise the abuse in our minds and solidify it as something normal.</p>
+
+<p>In fact chances are, your life may consist of nothing but bad communication.</p>
+
+<p>So in order to change, we&rsquo;re going to keep it simple and effective.</p>
+
+<p>Otherwise your entire family is going to die.</p>
+
+<p>So you better be reading.</p>
+
+<p>Ultimately, effective communication comes down to confidence.</p>
+
+<p>And the only way to build confidence is to expose your feelings and express who you really are.</p>
+
+<p>Because on a deeper level, confidence is about mastering your ability to express yourself, which provides you with the power and control to communicate effectively.</p>
+
+<p>On the contrary, people develop this idea that you have to master being someone else first, in order to become comfortable with being yourself.</p>
+
+<p>It&rsquo;s beyond absurd.</p>
+
+<p>Part of reason for this kind of thinking comes down:</p>
+
+<p>a) Worrying about offending others.</p>
+
+<p>b) Fearing what people will think about who we truly are.</p>
+
+<p>And it&rsquo;s these two things that usually lead to a bulk of the awkwardness and dishonesty we create on a daily basis.</p>
+
+<h3 id="the-great-misconception-of-confidence">The Great Misconception Of Confidence</h3>
+
+<p><img src="/img/blog/06-03.png" alt="The Great Misconception Of Confidence" /></p>
+
+<p>In order to address these fears, I think we need to address one glaring misconception that many people have of confidence.</p>
+
+<p>That is, this idea that confidence can shield us and prevent us from being hurt from dishonesty or being treated poorly.</p>
+
+<p>Certainly, it was the model of confidence that I developed growing up, and is a key reason for my intrepid retardation.</p>
+
+<p>Effective confidence isn&rsquo;t about keeping yourself immune from your emotions, or prtecting yourself from others.</p>
+
+<p>It&rsquo;s about being independent from your own destructive thoughts and being able to healthily address the abuse, rather than tolerate it.</p>
+
+<p>It is about having the courage to change in the face of abuse and uncertainty, and to act upon your will and intentions.</p>
+
+<p>Part of the issue is that while a lot of us can identify abuse, many of us also do nothing about it.</p>
+
+<p>We do nothing about it because even though we know what we have to do to change, we lack the courage to make that step.</p>
+
+<p>We can find walking away a lot more difficult than simply sticking around, particularly when we may be dependent on others or not know otherwise.</p>
+
+<p>Ultimately, confidence isn&rsquo;t about being a rock.</p>
+
+<p>In my particular case, it was having the courage to cut off (almost) everyone in my life who I could not communicate effectively with, including my own mother.</p>
+
+<p>Because even though a lot of these acquaintances were fun, and even benefitial in a lot of ways, they were not honest.</p>
+
+<!-- talk about offense and how people get offended.  -->
+
+<p>And At the end of the day your mental health is the most important thing you have.</p>
+
+<p>It&rsquo;s more important than family. It&rsquo;s more important than money. It&rsquo;s more important than maintaining friendships.</p>
+
+<p>Because without your mental health, you cannot reliably have any of the above.</p>
+
+<h3 id="anecdote-what-communication">Anecdote: What Communication?</h3>
+
+<p><img src="/img/blog/06-04.png" alt="Anecdote: What Communication?" /></p>
+
+<p>I still remember being completely shocked.</p>
+
+<p>I was having dinner with the family of one of my ex-girlfriends and I remember sitting at the dinner table thinking &ldquo;holy shit&rdquo;.</p>
+
+<p>&ldquo;So this is what having a proper family is like.&rdquo;</p>
+
+<p>We were talking, laughing, making wildly inappropiate jokes. I could be myself and it was a wonderful thing.</p>
+
+<p>It was so remarkably different to what I had grown up with, especially in regards to the relationship I had with my mother.</p>
+
+<p>We didn&rsquo;t talk. I didn&rsquo;t feel comfortable talking to her. We had nothing in common and we could barely tolerate each other.</p>
+
+<p>In fact, the only time we would talk is when we woud argue.</p>
+
+<p>Which lead to a lot of arguing in an attempt to connect, which developed into the idea that arguing was a completely normal way to communicate.</p>
+
+<p>Eventually it got to the point where we wouldn&rsquo;t talk or see each other for weeks at a time, only when we incidentally happened to bump into each other in the house.</p>
+
+<p>Yet this is what family was to me.</p>
+
+<p>A purely transactional affair where she has certain privileges because she was my &ldquo;mother&rdquo; and I had to do what she said because I was her &ldquo;son&rdquo;.</p>
+
+<p>Things weren&rsquo;t discussed, because loyalty didn&rsquo;t require discussion.</p>
+
+<p>It was lifeless and the complete opposite to communication.</p>
+
+<p>It was a dictatorship.</p>
+
+<p>Which meant there was no accountability, which eventually dissolved into abuse and chaos.</p>
+
+<p>And the worst part?</p>
+
+<p>She wouldn&rsquo;t listen, even once I&rsquo;d become an adult and told her relentlessly that it wasn&rsquo;t okay to be a dictator.</p>
+
+<p>Yet she couldn&rsquo;t understand that.</p>
+
+<p>So I left.</p>
+
+<p>Now there&rsquo;s a few things we can learn from this.</p>
+
+<p>In particular, that healthy communication isn&rsquo;t about establishing order or about producing an outcome.</p>
+
+<p>On a deeper level communicaiton is about making the person feel comfortable with themselves, and that was largely ignored.</p>
+
+<p>But before you focus on becoming comfortable with yourself, you need to remove those who make you feel uncomfortable.</p>
+
+<h3 id="confidence-is-ummmmm">Confidence, is ummmmm&hellip;</h3>
+
+<p><img src="/img/blog/06-05.png" alt="Confidence, is ummmmm..." /></p>
+
+<p>So there you have it.</p>
+
+<p>It&rsquo;s a difficult topic and really only a starting point.</p>
+
+<p>Future articles will aim to elaborate on how to communicate effectively, focusing on the reality of what effective communication is about.</p>
+
+<p>Because it&rsquo;s not all rosy and free of attrition.</p>
+
+<p>Though certainly, it&rsquo;s better than the pain and suffering of depression and all things horrible.</p>
+
+<!-- 
+
+
+It is about identifying abuse AND taking the action to 
+
+It's about having the awareness to question the abuse and take action to move away from it. 
+
+
+
+You have one purpose in life. 
+
+That purpose is to make your life, as well as the lives of the people around you, feel as real as possible. 
+
+That means playing on all the desires and insecurities of others, in order to provide them with the best possible experience in life.  
+
+Because quite frankly, it is the only thing people care about. 
+
+They want to feel familiar with their thoughts and surroundings. 
+
+
+// go into manipulation and how it's a bad form of feeling real. 
+
+
+
+
+
+We have to understand the premise of being offended. 
+
+Certainly, there's a lot that goes into effective communication. 
+
+A lot that I probably won't be able to cover within this article.
+
+However the most practical piece of advice is to cut off people in your life that you do not communicate well with. 
+
+Friends. Family members. 
+
+
+It's part of the reason why I decided to create this website: To allow people to have their cake and eat it too.
+
+To achieve success without the 
+
+Admittedly, I cut off a lot of people in my life. A large portion of my friends. My own mother.
+
+
+Of course, this is just a starting point. 
+
+
+The crucial point here is that effective communication is honest, which essentially means that our understanding and relation will be accurate, rather than false.
+
+Because when we build a false picture, we lead ourselves to delusion, mental illness and insecurity. 
+
+Remember, what makes communication so crucial is that it'is the ONLY medium through which we can relate to the world. 
+
+So when you remain dishonest, you cut yourself off from the world and it's only once you return, that you can begin to fall apart. 
+
+These actions are all by-products of ineffective communication. 
+
+In particular, with ourselves. 
+
+
+In fact, part of the reason why we remain dishonset in our communication is that we can worry about these things for so long that we no longer remember the original cause of our delusion or depression. 
+
+Rather than pursue a policy of honesty, we instead try to appease our feelings and emotions.
+
+Though certainly, it's not always avoidable. 
+
+When we have abusive parents or friend groups in school, there's often little we can do.
+
+However, chin up.
+
+If you're still a kid, I can only wish you luck. 
+
+However if you're an adult, you have a choice with your life and that's what we're going to discuss.
+
+<!-- how to cut off family members or toxic people in your life. -->
+
+<p>&ndash;&gt;</p>
+
+    </div>
+
+    <p class="blog-footer-bottom-text content">
+        My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
+    </p> 
+      
+
+
+      
+  <div id="writing" class="writing-flex">
+
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2018/01/17/my-last-post-hopefully/"><img class="writing-thumbnail" src="/img/blog/25.png" alt="Hello there"></br>
+
+      My Last Post, Hopefully</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/12/03/daddy-reades-delicious-comeback/"><img class="writing-thumbnail" src="/img/blog/24.png" alt="Hello there"></br>
+
+      Daddy Reade&#39;s Delicious Comeback</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/10/01/i-may-have-discovered-how-to-be-happy/"><img class="writing-thumbnail" src="/img/blog/23.png" alt="Hello there"></br>
+
+      I May Have Discovered How To Be Happy</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/09/17/i-still-struggle-with-my-first-relationship/"><img class="writing-thumbnail" src="/img/blog/22.png" alt="Hello there"></br>
+
+      I Still Struggle With My First Relationship</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/09/03/amelia-snow/"><img class="writing-thumbnail" src="/img/blog/21.png" alt="Hello there"></br>
+
+      Amelia Snow</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/08/20/why-i-disowned-my-mother-in-2016/"><img class="writing-thumbnail" src="/img/blog/20.png" alt="Hello there"></br>
+
+      Why I Disowned My Mother In 2016</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/08/06/love-thy-temple/"><img class="writing-thumbnail" src="/img/blog/19.png" alt="Hello there"></br>
+
+      Love Thy Temple</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/07/23/compassion-is-masturbation-without-the-guilt/"><img class="writing-thumbnail" src="/img/blog/18.png" alt="Hello there"></br>
+
+      Compassion Is Masturbation Without The Guilt</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/07/09/two-philosophies/"><img class="writing-thumbnail" src="/img/blog/17.png" alt="Hello there"></br>
+
+      Two Philosophies</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/06/11/your-emotions-are-an-elaborate-lie/"><img class="writing-thumbnail" src="/img/blog/16.png" alt="Hello there"></br>
+
+      Your Emotions Are An Elaborate Lie</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/05/28/the-unforunate-laymans-guide-to-beating-addiction/"><img class="writing-thumbnail" src="/img/blog/15.png" alt="Hello there"></br>
+
+      The Unforunate Layman&#39;s Guide To Beating Addiction</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/05/14/why-the-paleo-diet-isnt-bullshit/"><img class="writing-thumbnail" src="/img/blog/14.png" alt="Hello there"></br>
+
+      Why The Paleo Diet Isn&#39;t Bullshit</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/04/30/understanding-my-invalid-obsession-with-success/"><img class="writing-thumbnail" src="/img/blog/13.png" alt="Hello there"></br>
+
+      Understanding My Invalid Obsession With Success</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/04/16/self-awareness-the-two-step-tango/"><img class="writing-thumbnail" src="/img/blog/12.png" alt="Hello there"></br>
+
+      Self-Awareness: The Two-Step Tango</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/03/31/success-is-a-verifiable-system/"><img class="writing-thumbnail" src="/img/blog/11.png" alt="Hello there"></br>
+
+      Success Is A Verifiable System</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/03/16/non-postal/"><img class="writing-thumbnail" src="/img/blog/10.png" alt="Hello there"></br>
+
+      Non-Postal</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/02/19/what-it-means-to-be-an-effective-adult/"><img class="writing-thumbnail" src="/img/blog/09.png" alt="Hello there"></br>
+
+      What It Means To Be An Effective Adult</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/02/08/an-intuitive-and-simple-guide-to-understanding-your-depression/"><img class="writing-thumbnail" src="/img/blog/08.png" alt="Hello there"></br>
+
+      An Intuitive And Simple Guide To Understanding Your Depression</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/01/22/why-young-men-resort-to-pick-up/"><img class="writing-thumbnail" src="/img/blog/07.png" alt="Hello there"></br>
+
+      Why Young Men Resort To Pick Up</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/01/08/have-you-an-effective-communication-with-you-and-me/"><img class="writing-thumbnail" src="/img/blog/06.png" alt="Hello there"></br>
+
+      Have You An Effective Communication With You And Me</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/12/25/please-dont-tell-me-youre-sorry/"><img class="writing-thumbnail" src="/img/blog/05.png" alt="Hello there"></br>
+
+      Please Don&#39;t Tell Me You&#39;re Sorry</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/12/11/smart-people-dont-think.-they-plan-ahead/"><img class="writing-thumbnail" src="/img/blog/04.png" alt="Hello there"></br>
+
+      Smart People Don&#39;t Think. They Plan Ahead</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/11/27/why-obtaining-a-full-time-job-should-be-your-number-one-priority/"><img class="writing-thumbnail" src="/img/blog/03.png" alt="Hello there"></br>
+
+      Why Obtaining A Full-time Job Should Be Your Number One Priority</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/11/13/what-it-means-to-be-a-porn-addict/"><img class="writing-thumbnail" src="/img/blog/02.png" alt="Hello there"></br>
+
+      What It Means To Be A Porn Addict</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/10/30/intuitive-explanations-make-you-dizzyingly-smart/"><img class="writing-thumbnail" src="/img/blog/01.png" alt="Hello there"></br>
+
+      Intuitive Explanations Make You Dizzyingly Smart</a>
+
+      </div>
+      
+  </div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'juliusreade';
+    var disqus_identifier = 'https:\/\/juliusreade.com\/2017\/01\/08\/have-you-an-effective-communication-with-you-and-me\/';
+    var disqus_title = 'Have You An Effective Communication With You And Me';
+    var disqus_url = 'https:\/\/juliusreade.com\/2017\/01\/08\/have-you-an-effective-communication-with-you-and-me\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+</section>
+
+
+
+ 
+
+
+
+
+  </div>
+<script id="dsq-count-scr" src="//juliusreade.disqus.com/count.js" async></script>
+</body>
+<footer class="container ">
+  <div class="footer-article">
+    <p>
+    &copy; 2016 Julius Reade.
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+    if you believe in that kind of thing.  
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Somebody Please Help Me</title>
+    <link>https://juliusreade.com/categories/index.xml</link>
+    <description>Recent content on Somebody Please Help Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <atom:link href="https://juliusreade.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>https://juliusreade.com/about/</link>
+      <pubDate>Sun, 09 Oct 2016 09:54:24 +1100</pubDate>
+      
+      <guid>https://juliusreade.com/about/</guid>
+      <description>&lt;p&gt;#About&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://juliusreade.com/writing/</link>
+      <pubDate>Sun, 09 Oct 2016 09:54:24 +1100</pubDate>
+      
+      <guid>https://juliusreade.com/writing/</guid>
+      <description>&lt;p&gt;#About&lt;/p&gt;
+
+&lt;p&gt;rst rst&lt;/p&gt;
+
+&lt;p&gt;rs tsr strst&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

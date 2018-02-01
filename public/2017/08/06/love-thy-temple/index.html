@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}.container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}.column,.columns,.container{width:100%;box-sizing:border-box}.column,.columns{float:left}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:900px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%;max-width:440px}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4rem;line-height:1.2}h1,h2{letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type=button],input[type=reset],input[type=submit]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:focus,.button:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type=button].button-primary,input[type=reset].button-primary,input[type=submit].button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:focus,.button.button-primary:hover,button.button-primary:focus,button.button-primary:hover,input[type=button].button-primary:focus,input[type=button].button-primary:hover,input[type=reset].button-primary:focus,input[type=reset].button-primary:hover,input[type=submit].button-primary:focus,input[type=submit].button-primary:hover{color:#fff;background-color:#1eaedb;border-color:#1eaedb}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type=checkbox],input[type=radio]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:400}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}.button,button{margin-bottom:1rem}fieldset,input,select,textarea{margin-bottom:1.5rem}blockquote,dl,figure,form,ol,p,pre,table,ul{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}
+  </style>
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  
+  <meta name="description" content="Love Thy Temple">
+  <meta name="author" content="Julius Reade">
+  <meta name="keywords" content="[yolo]">
+
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85083093-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+  
+
+<meta property="og:title" content="Love Thy Temple">
+<meta property="og:description" content="Love Thy Temple">
+<meta property="og:image" content="https://juliusreade.com/img/blog/19.png">
+<meta property="og:url" content="https://juliusreade.com/2017/08/06/love-thy-temple/">
+<meta property="og:site_name" content="Julius Reade: Love Thy Temple">
+
+
+<meta name="twitter:title" content="Love Thy Temple ">
+<meta name="twitter:description" content="Love Thy Temple">
+<meta name="twitter:image" content="https://juliusreade.com/img/blog/19.png">
+<meta name="twitter:site" content="@JuliusReade">
+<meta name="twitter:creator" content="@JuliusReade">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Love Thy Temple">
+
+
+<link rel="preconnect" href="juliusreade.com/services">
+<link rel="preconnect" href="juliusreade.com/about">
+<link rel="preconnect" href="juliusreade.com/writing">
+  
+  <title>Julius Reade | Love Thy Temple</title>
+
+</head>
+
+<body>
+  <div class="container article-container">
+
+<section class="column content-width">
+  
+  <a class="homepage-back" href="/">
+  <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M11.262,16.714l9.002,8.999  c0.395,0.394,1.035,0.394,1.431,0c0.395-0.394,0.395-1.034,0-1.428L13.407,16l8.287-8.285c0.395-0.394,0.395-1.034,0-1.429  c-0.395-0.394-1.036-0.394-1.431,0l-9.002,8.999C10.872,15.675,10.872,16.325,11.262,16.714z" fill="#121313" fill-rule="evenodd" id="Chevron_Right"/><g/><g/><g/><g/><g/><g/></svg>
+  </a>
+  
+
+    <h1 class="blog-article-title"><a href="/2017/08/06/love-thy-temple/">Love Thy Temple</a></h1>
+    <h3>By Julius Reade </h3> 
+    
+    <div class="social-container-article"><a class="social1000" href="https://www.twitter.com/dottjt"><span ><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook"><g><path d="M511.992,256.008c0,141.387-114.6,255.98-255.988,255.98c-141.396,0-255.996-114.594-255.996-255.98    C-0.004,114.619,114.607,0.012,255.996,0.012C397.393,0.012,512,114.619,511.992,256.008z" fill="#2556A0"/><path d="M265.074,370.74l-47.757,47.764l88.585,88.594c104.943-20.734,186.832-105.563,203.129-212.029    L329.073,115.104L183.068,288.725L265.074,370.74z" opacity="0.15"/></g><g id="Facebook_1_"><g><path d="M277.996,233.047l0.008-49.664h0.047c-0.039-0.344-0.047-0.672-0.055-1.023     c0-6.43,5.211-11.648,11.633-11.648h39.444l-0.008-20.055l0.008-7.742v-27.811h-58.147l-0.008,0.188     c-30,2.313-53.601,27.389-53.601,57.967v59.797l-34.397-0.008v55.631h34.397v129.826h60.679V281.99h39.5l6.163-48.943H277.996z" fill="#F4F6F9"/></g></g></g></svg></a>
+</a>    
+</span>
+<a class="social1000" href="https://www.facebook.com/julius.reade"><span ><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="twitter"><g><path d="M511.994,256c0,141.387-114.6,255.996-255.988,255.996c-141.4,0-256-114.609-256-255.996    c0-141.389,114.6-255.996,255.992-255.996C397.395,0.004,512.002,114.611,511.994,256z" fill="#00B7EB"/><path d="M185.563,250.859l-40.391,40.389l29.781,29.781l-11.938,11.953l44.288,44.281l-6.336,6.734l-87.187-6.719    l134.521,134.514c2.563,0.078,5.117,0.203,7.703,0.203c137.998,0,250.426-109.203,255.738-245.904L408.801,163.148    L258.045,323.342L185.563,250.859z" opacity="0.1"/></g><path d="M417.191,187.797c-11.172,4.938-23.156,8.281-35.758,9.797   c12.852-7.703,22.719-19.906,27.367-34.445c-12.016,7.133-25.352,12.305-39.516,15.102c-11.359-12.109-27.538-19.656-45.444-19.656   c-34.374,0-62.241,27.859-62.241,62.266c0,4.875,0.547,9.625,1.609,14.188c-51.733-2.609-97.592-27.375-128.295-65.063   c-5.375,9.203-8.438,19.906-8.445,31.313c0.008,21.609,11,40.656,27.703,51.828c-10.203-0.328-19.797-3.125-28.203-7.781   c0,0.25,0,0.516,0,0.766c0,30.186,21.461,55.342,49.938,61.092c-5.219,1.406-10.734,2.156-16.398,2.156   c-4.023,0-7.922-0.375-11.719-1.094c7.93,24.734,30.922,42.734,58.14,43.234c-21.296,16.688-48.124,26.656-77.296,26.656   c-5.023-0.016-9.98-0.281-14.852-0.875c27.555,17.67,60.266,27.998,95.421,27.998c114.506,0,177.099-94.904,177.099-177.215   c0-2.672-0.055-5.375-0.164-8.047C398.285,211.234,408.84,200.266,417.191,187.797z" fill="#F4F6F9" id="Twitter_2_"/></g></svg></a>
+</a>
+</span>
+<a class="social1000"href="https://github.com/dottjt/julius">      <span><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="github_1_"><g><path d="M511.994,256c0,141.387-114.607,255.988-256.004,255.988C114.613,511.988,0.006,397.387,0.006,256    c0-141.381,114.6-255.988,255.992-255.988C397.379,0.012,511.994,114.619,511.994,256z" fill="#3C3C3C"/><path d="M173.719,267.975l-45.68,0.695l-13.988,2.391l8.863,8.867l-4.77,2.266l64.465,64.477l-1.867,1.875    l50.475,50.482l-2.141,2.367l-11.39,4.055l99.202,99.195c96.826-23.633,172.027-102.305,190.613-201.021L347.638,143.758    L188.055,277.959L173.719,267.975z" opacity="0.2"/></g><path d="M416.918,271.068l0.273-2.773c-16.859-1.617-33.633-1.758-49.93-0.539   c2.625-8.258,3.992-17.584,3.891-28.186c-0.211-22.547-7.813-40.086-19.757-54.656c2.304-13.727,0.586-27.438-3.758-41.156   c-17.078,1.375-32.444,6.891-46.124,16.508c-25.578-5.141-51.141-5.461-76.727-0.008c-15.96-10.641-31.632-15.867-47.053-16.5   c-4.578,15.102-5.281,30.008-1.43,44.648c-13.445,14.117-18.594,31.258-18.336,50.227c0.133,10.875,1.836,20.529,4.953,29.076   c-16.047-1.164-32.539-1.016-49.129,0.594l0.258,2.758c16.91-1.617,33.707-1.75,50.012-0.484c0.602,1.438,1.219,2.859,1.891,4.242   c-17.672-0.461-33.594,1.055-48.48,4.672l0.672,2.703c15.121-3.664,31.324-5.141,49.418-4.539   c11.953,21.008,34.983,33.352,68.529,37.266c-7.805,6.242-11.984,13.633-13.054,21.984c0,0-3.539,0-17.758,0   c-23.866-0.008-30.374-30.07-55.085-27.102c23.969,11.758,19.195,49.297,57.546,49.297c12.891,0.008,15.641,0.008,16.109,0.008   v34.404c0.18,5.57-2.273,9.289-6.227,11.867c13.726,1.375,24.062-5.398,24.062-13.727c0-8.311,0-41.443,0-45.475   c0-4.07,4.297-4.383,4.297-4.383v53.107c0.164,5.305-2.43,8.313-5.188,11.18c12.109,0.469,23.492-1.914,24-12.102   c0,0,0.008-48.264,0.008-50.834c0-2.547,4.234-2.617,4.234,0c0,2.625,0,48.451,0,48.451c0.125,8.586,7.617,15.563,23.516,14.484   c-4.227-3.398-5.547-6.805-5.547-11.758c0-4.945,0-52.529,0-52.529s4.383-0.219,4.383,4.383c0,4.563,0,36.625,0,44.279   c0,9.875,11.984,13.953,25.656,13.555c-4.469-3.313-7.531-7.273-7.531-12.555v-53.279c-0.477-7.828-3.688-15.234-10.016-22.094   c30.655-4.656,52.756-16.766,63.764-38.43c18.156-0.617,34.398,0.859,49.586,4.547l0.664-2.711   c-15.023-3.641-31.07-5.164-48.922-4.68c0.625-1.375,1.242-2.742,1.758-4.195C382.848,269.303,399.832,269.436,416.918,271.068z    M160.922,314.279c-0.758,0-1.383-0.43-1.383-0.938c0-0.531,0.625-0.961,1.383-0.961c0.742,0,1.367,0.43,1.367,0.961   C162.289,313.857,161.664,314.279,160.922,314.279z M165.203,317.186c-0.82,0-1.516-0.469-1.516-1.07   c0-0.578,0.688-1.047,1.516-1.047c0.836,0,1.508,0.469,1.508,1.055C166.719,316.717,166.047,317.186,165.203,317.186z    M169.563,320.943c-0.984,0-1.766-0.555-1.766-1.234c0-0.711,0.766-1.266,1.766-1.266c0.984,0,1.781,0.563,1.781,1.258   S170.547,320.943,169.563,320.943z M173.805,325.451c-1.148,0-2.086-0.648-2.086-1.453s0.938-1.445,2.086-1.445   c1.141,0,2.086,0.641,2.086,1.453C175.891,324.811,174.945,325.459,173.805,325.451z M178.453,330.568   c-1.266,0-2.305-0.734-2.305-1.625s1.039-1.625,2.305-1.625c1.297,0,2.328,0.734,2.328,1.633   C180.781,329.834,179.75,330.568,178.453,330.568z M183.859,335.756c-1.414,0-2.555-0.813-2.563-1.797   c0.008-1.008,1.148-1.813,2.563-1.813c1.43,0,2.563,0.813,2.578,1.813C186.422,334.943,185.297,335.748,183.859,335.756z    M191.164,340.678c-1.57,0.008-2.852-0.891-2.852-2c-0.008-1.109,1.281-2,2.852-2c1.577,0,2.851,0.891,2.851,2   S192.741,340.678,191.164,340.678z M200.218,343.326c-1.563,0-2.867-0.906-2.867-2.008c0-1.094,1.305-2.008,2.867-2.008   c1.57,0,2.867,0.906,2.867,2.008S201.788,343.326,200.218,343.326z M209.765,343.615c-1.578-0.008-2.859-0.891-2.859-1.984   c0-1.125,1.281-2.016,2.859-2.016s2.836,0.891,2.836,2.016C212.601,342.725,211.343,343.607,209.765,343.615z M219.187,343.803   c-1.563,0.008-2.852-0.891-2.852-2.008c0-1.094,1.273-1.992,2.852-2c1.57,0.008,2.852,0.898,2.852,2   C222.038,342.912,220.757,343.803,219.187,343.803z" fill="#F4F6F9" id="Github_1_"/></g></svg></a>
+</a>
+</span>
+
+</div>
+		<h6 class="subtitle is-6">August 6, 2017</h6>
+
+    <div class="content">
+      
+
+<p>I didn&rsquo;t grow up religious.</p>
+
+<p>Well, I did.</p>
+
+<p>But I certainly didn&rsquo;t grow up believing in any of it.</p>
+
+<p>In particular, I never quite understood this compulsion for people to believe.</p>
+
+<p>All I could comprehend was how silly their beliefs were, rather than understand the bigger picture of their religious experience.</p>
+
+<p>Though perhaps that&rsquo;s what made it so dangerous.</p>
+
+<p>While I knew of their beliefs, I didn&rsquo;t quite get to drink from that exquisite chalice that made them drunk.</p>
+
+<p>And embrace myself in that feeling of religion.</p>
+
+<p>Which in essence, made me more susceptible to being influenced by religion later on in life.</p>
+
+<p>In all it&rsquo;s light and darkness.</p>
+
+<p>And in a lot of ways, that&rsquo;s what happened.</p>
+
+<p>I found myself being transformed by my beliefs and ideas more intensely later in life.</p>
+
+<p>Disguised as something completely unfamiliar and ravishing.</p>
+
+<p>On a personal level, substituting prophets with the woman in my life, almost recreating an agnostic version of the bible to complete my understanding of the world.</p>
+
+<p>While I&rsquo;ve thankfully dissolved all that, today I would like to write about why.</p>
+
+<p>Because when you think about it, religion is everything.</p>
+
+<p>It&rsquo;s what defines our understanding of the world, as well as our behaviours and beliefs.</p>
+
+<p>It doesn&rsquo;t really matter what we believe - we are all still confined to the hope and delusion which manifests from our undying curiosity to understand ourselves, and the world around us.</p>
+
+<p>Where I believe people like myself go wrong, is believing too intensely in this idea of truth.</p>
+
+<p>That one religion must inherently be better than another, based on the facts it aims to represent.</p>
+
+<p>In my case, believing that my agnostic beliefs were superior above all.</p>
+
+<p>When by definition, faith doesn&rsquo;t attempt to be anything more than a mere notion of hope and worship.</p>
+
+<p>And in an ultimate twist of irony, find yourself becoming more religious than the people you criticised internally as being religious, in this holy search for &lsquo;truth&rsquo;.</p>
+
+<p>Not as a means to discredit others.</p>
+
+<p>But to reinforce what we believe about ourselves.</p>
+
+<p>It is a perpetual cycle of tyranny.</p>
+
+<p>Arguably, entirely unavoidable.</p>
+
+<h3 id="what-is-a-temple">What Is A Temple?</h3>
+
+<p><img src="/img/blog/19-01.png" alt="What Is A Temple?" /></p>
+
+<p>To begin our understanding, I want us to focus on this idea of the temple.</p>
+
+<p>And how it relates to every single one of us, regardless of our faith or lackthereof.</p>
+
+<p>As I&rsquo;m sure we&rsquo;re all aware, certain faiths construct churches to spread and congregate their faith.</p>
+
+<p>And in a sense, we all do the same thing in our minds in regards to our ideas and beliefs.</p>
+
+<p>We worship them, as well as glorify (or demonise) them.</p>
+
+<p>And on a very basic level temples are places of worship.</p>
+
+<p>They are places for us to cherish and embrace the ideas which we hold to be sacred.</p>
+
+<p>In other words, they are places for us to cultivate and develop our beliefs.</p>
+
+<p>And when you think of the mind as a structure, we all have thousands of different temples.</p>
+
+<p>Representing different ideas and beliefs.</p>
+
+<p>Each one of them, a reflection of our understanding of what we find important in life.</p>
+
+<p>Some of these temples are quite large and influential.</p>
+
+<p>Others are quite small and insignificant, meaning they have less influence on our behaviours and actions.</p>
+
+<p>Many on the other hand simply don&rsquo;t exist, because we have yet to have that idea or belief.</p>
+
+<p>For example, our seemingly non-existent temple on 3rd century peanut farming.</p>
+
+<p>It probably just&hellip; won&rsquo;t ever happen.</p>
+
+<p>The size (and existence) of our temple depends on how much time and effort we spend cultivating and embracing them.</p>
+
+<p>Which brings me to my second point.</p>
+
+<p>What&rsquo;s important to note is that these temples aren&rsquo;t pre-existing structures.</p>
+
+<p>And that beliefs don&rsquo;t just appear out of thin air.</p>
+
+<p>They&rsquo;re constructed.</p>
+
+<p>We construct these temples.</p>
+
+<p>We construct and reinforce them with our thoughts, our time and our worship.</p>
+
+<p>We reinforce them each time we feel a sense of insecurity, and in every blink that subconsciously defines our experience.</p>
+
+<p>We develop them and support them, not only with our words, however also with the thousands of other beliefs we have in our minds.</p>
+
+<p>They are an extension of us in every single way.</p>
+
+<p>Sure.</p>
+
+<p>Many of these beliefs may have been created out of our control as a child.</p>
+
+<p>However that is not to say that we ultimately do not have responsibility, nor function over them.</p>
+
+<h3 id="worshiping-the-wrong-temple">Worshiping The Wrong Temple</h3>
+
+<p><img src="/img/blog/19-02.png" alt="Worshiping The Wrong Temple" /></p>
+
+<p>Certainly, not understanding these ideas surrounding our beliefs.</p>
+
+<p>Is where a lot of people go wrong with their mental health.</p>
+
+<p>So, let&rsquo;s learn and hopefully change.</p>
+
+<p>It is important to understand how we construct (and worship) these temples in our mind.</p>
+
+<p>Because they can explain a lot about the behaviours and irrational thoughts we exhibit on a daily basis.</p>
+
+<p>In addition, once we master this process.</p>
+
+<p>We can control what we believe, as well as how we feel about ourselves.</p>
+
+<p>So why do people struggle so much in this regard?</p>
+
+<p>Often, this is by design.</p>
+
+<p>Something we&rsquo;ll get into in this article.</p>
+
+<p>I suppose the aim of this article is to help you better understand how we create these temples of belief.</p>
+
+<p>As well as how we can dismantle them.</p>
+
+<p>Ultimately like all things in life, the medium isn&rsquo;t the problem.</p>
+
+<p>Temples can be empowering, just as they can be destructive.</p>
+
+<p>What&rsquo;s important is our ability to control them, and construct and deconstruct them at our will.</p>
+
+<p>Which like all things, is something you learn with time - no different to creating harmful beliefs.</p>
+
+<p>And like most things in life, is something most of us won&rsquo;t get around to until completely necessary.</p>
+
+<p>i.e. construct a temple that ruins our life.</p>
+
+<p>For example, many of us construct temples which aim to set false expectations of reality, or which dictate our self-worth.</p>
+
+<p>Temples based on relationships that aren&rsquo;t what they seem, or on paradigms of addiction which merely hold us ransom to our senses.</p>
+
+<p>Personally speaking, I&rsquo;d constructed this incredible temple based on the experience of my first relationship.</p>
+
+<p>Which by design, was greater than anything else I&rsquo;d ever constructed (welcome to the land of love).</p>
+
+<p>And once that relationship had ended, I didn&rsquo;t quite know how to respond.</p>
+
+<p>My feelings of leaving were conflicting with this temple/belief I&rsquo;d constructed in my mind, which represented our relationship as the greatest thing ever devised.</p>
+
+<p>To the point that I&rsquo;d considered my temple to be a source of truth, preventing me to let go of her.</p>
+
+<p>Even though I knew I wasn&rsquo;t actually happy in that relationship, and that it was toxic to me.</p>
+
+<p>Inspite of the fact that she was no longer there in my life.</p>
+
+<p>I simply couldn&rsquo;t understand that this temple was merely a fabrication in my mind.</p>
+
+<p>Which is what makes our beliefs so powerful - they&rsquo;re essentially what define our reality.</p>
+
+<p>Which is also to say that humans are inherently religious creatures.</p>
+
+<p>Ultimately, leading us towards these states of delusion and denial, in an attempt to cope with the conflict we have between &lsquo;reality&rsquo; and our beliefs.</p>
+
+<p>It is why the process of deconstructing these temples can feel as if we are destroying an inherent part of ourselves.</p>
+
+<p>As if we are losing part of our reality.</p>
+
+<p>Because we are essentially destroying the structure that we spent so long supporting.</p>
+
+<p>And is the reason why most people never move on, because they find that pain too difficult to bear.</p>
+
+<p>For the same reason we are all afraid of death.</p>
+
+<p>Which is funny, because none of it is &lsquo;real&rsquo; and the pain is merely pre-conceived.</p>
+
+<p>Except it&rsquo;s not funny.</p>
+
+<p>This is life.</p>
+
+<h3 id="temples-are-tough-business">Temples Are Tough Business</h3>
+
+<p><img src="/img/blog/19-03.png" alt="Temples Are Tough Business" /></p>
+
+<p>Temples are hard.</p>
+
+<p>But they&rsquo;re not impossible.</p>
+
+<p>The first thing we must understand about temples/beliefs is that we have complete control over them.</p>
+
+<p>The problem most of us face is that most of us design these temples (usually subconsiously) solely to be worshipped.</p>
+
+<p>Not to be destroyed.</p>
+
+<p>We design them to be one-way negotiations in an attempt to cultivate delusion, rather than something we can truly connect with.</p>
+
+<p>The scary thing about these kinds of temples, is that we often don&rsquo;t even realise we&rsquo;ve created them.</p>
+
+<p>We enjoy the feeling of worshipping these temples so much, that we completely neglect the process that went into constructing them in the first place.</p>
+
+<p>In fact, we become so desperate that design these these temples with all kinds of traps and defenses in order to ensure that they cannot be destroyed.</p>
+
+<p>Making us feel utterly clueless as to how we should respond, once we realise how destructive they have become to our lives.</p>
+
+<p>This is the monster we must address.</p>
+
+<p>Naturally, in building our temples, we created guards and defense measures to ensure it&rsquo;s safety.</p>
+
+<p>Which is almost inherent, given people usually build temples in times of need and desperation.</p>
+
+<p>In essence, I suppose what I&rsquo;m getting at is that there are different ways we can construct our temples.</p>
+
+<p>And that ideally, these temples should be places of understanding and change.</p>
+
+<p>Not of dictatorship and delusion.</p>
+
+<p>Structures not designed to replicate &lsquo;truth&rsquo;.</p>
+
+<p>But designed to be a a reflection of the processes and behaviours in our life, rather than on faith or beliefs.</p>
+
+<p>While beliefs are important - they don&rsquo;t necessarily facilitate anything to the extent that processes and routines do.</p>
+
+<!-- Article about routine -->
+
+<p>Of course, you could also argue that we shouldn&rsquo;t glorify our beliefs at all.</p>
+
+<p>And while I would heartily agree, I would also argue that for most people in modern society, it&rsquo;s entirely unavoidable.</p>
+
+<p>So at the very least, you may as well construct something benign, or that facilitates your goals and achievements in life.</p>
+
+<p>Because when we invest in our temple, we invest in the behaviours and feelings that our temples promote.</p>
+
+<p>And this is what gives us the power of control.</p>
+
+<p>In dismantling our temples on the other hand, what we are truly saying is that we want to return that power to ourselves.</p>
+
+<p>To return to a state where we don&rsquo;t feel obligated to believe in one particular idea or thing.</p>
+
+<p>But to be free.</p>
+
+<h3 id="dissolving-our-temples-and-constructing-new">Dissolving Our Temples And Constructing New</h3>
+
+<p><img src="/img/blog/19-04.png" alt="Dissolving Our Temples And Constructing New" /></p>
+
+<p>When we believe in something so intensely, we can fail to understand how exactly we&rsquo;re reinforcing these structures.</p>
+
+<p>Not only because we&rsquo;re in denial, but because these temples have been designed not to be dismantled, let alone understood.</p>
+
+<p>And for better or worse, it is a process that can take years.</p>
+
+<p>Literally, years.</p>
+
+<p>Thankfully, there&rsquo;s a method that can help us bypass all this
+(although it will still probably take us years, however it is also much easier to navigation through)</p>
+
+<p>Where we won&rsquo;t need to worry about dismantling these indestructible temples.</p>
+
+<p>Precisely, we are going to reverse engineer the process and learn to create new temples.</p>
+
+<p>Here is how.</p>
+
+<p>You know that resistance you feel when you try to learn something new and unfamiliar?</p>
+
+<p>Well, the reason why we find it so difficult, is because we&rsquo;re essentially constructing the beginnings of a new temple.</p>
+
+<p>The reason why it&rsquo;s difficult is for a few reasons.</p>
+
+<p>For starters, many of us go in learning something with no plans or designs of what the end result should be.</p>
+
+<p>And even if we do, that is not to say that we have an idea of what our temple will look like.</p>
+
+<p>We don&rsquo;t know if we&rsquo;re going to hate this temple (for example, I dislike my temple for sports trivia) or even if we&rsquo;re going to be able to build it at all.</p>
+
+<p>So often we just blindly do something until it sticks.</p>
+
+<p>This is why I stated earlier that it&rsquo;s much more constructive to build temples based on processes, rather than beliefs.</p>
+
+<p>Because these temples can help us facilitate in the construction of other temples, based directly on our behaviours - rather than something more abstract.</p>
+
+<p>In essence, we don&rsquo;t need to directly dismantle our harmful temples.</p>
+
+<p>All we need to do is invest in creating new, more powerful temples - and naturally our harmful temples will dissolve as we place less attention and focus on them.</p>
+
+<p>This means a few things.</p>
+
+<p>Firstly, it means becoming comfortable with that unfamiliarity and uncertain that comes with temple building.</p>
+
+<p>Because guess what.</p>
+
+<p>Learning new things is always awkward and hard, but the smart ones learn to embrace that.</p>
+
+<p>Secondly, it means finding new processes and beliefs.</p>
+
+<p>And honestly, it doesn&rsquo;t matter what they are.</p>
+
+<p>Because the only thing we&rsquo;re interested in is the process of learning, rather than what we&rsquo;re learning.</p>
+
+<p>Which can only come from from hard work, imagination and ambition - things which temples do not provide.</p>
+
+<p>Anything that empowers you to want to become a better person.</p>
+
+<p>Often where people will go wrong is that they will overcome their addiction, only to realise they have nothing else to go to.</p>
+
+<p>Merely repeating the cycle and returning to their bad habits.</p>
+
+<p>In these cases, it is because these new temples haven&rsquo;t been created from hard work, so their foundation will collapse at their very knees.</p>
+
+<h3 id="master-your-temple">Master Your Temple</h3>
+
+<p><img src="/img/blog/19-05.png" alt="Master Your Temple" /></p>
+
+<p>There is a second aspect to this that I haven&rsquo;t quite covered.</p>
+
+<p>And that is the aspect of worship.</p>
+
+<p>Specifically, in understanding how we create these temples, we want to focus on how we worship our beliefs and ideas.</p>
+
+<p>To identify them, and merely observe how we interact with our beliefs.</p>
+
+<p>Is it positive? Is it harmful?</p>
+
+<p>These are questions we must address in understanding how we interact with the world around us.</p>
+
+<p>Certainly, I am of the belief that experiencing (and perhaps overcoming) religion is an unavoidable aspect of the human experience.</p>
+
+<p>Largely, because it&rsquo;s something you first need to experience in order to identify.</p>
+
+<p>And yet once you&rsquo;ve identified it, you then have to face the crushing experience of dissolving it and everything else along with it.</p>
+
+<p>In an ideal world we should not rely or construct on our temples at all.</p>
+
+<p>And certainly, living without notion or expectation or overwhelming blief is something a lot of us should strive towards.</p>
+
+<p>Yet at the same time, it forms such a strong part of the human identity that perhaps it is asking too much of us.</p>
+
+<p>Ultimately, as long as you have the ability to control your temples.</p>
+
+<p>Rather than have them control you.</p>
+
+<p>Can we also have control over the success we create on a daily basis.</p>
+
+<!-- 
+
+Of course, most of us don't have this kind of luxury in the modern world - which means the strategic use of temples is the next best thing. 
+
+Which is to say that we shouldn't create temples based in overwhelming belief. 
+
+Or necessarily even commit to any beliefs at all. 
+
+Certainly, temples that empower us have their place in life. 
+
+
+This is often why I spout the merits of routine, because it can help us solidify the process of building helpful temples. 
+
+Through that initial temple you build from embracing routine itself. 
+
+
+First, we want to find ways in which we can distance ourselves from our temples. 
+
+This usually means not taking our feelings, emotions and thoughts personally.
+
+In essence, this means understanding that while these things feel real, they are merely indicators.
+
+Rather than a source of truth as our mind is trying to tell us. 
+
+-- link to our emotions are an elaborate lie --
+
+
+
+The other good news is that it doesn't have to happen overnight.
+
+Each time you chip away or think less about your temple than the day before, is one step closer .
+
+Often it's not about making big agreements.
+
+By making many small agreements we can slowly dissolve many of the negative aspects in our life. 
+
+More simply, first we have actions, then we form habits, which ultimately become beliefs.
+
+
+A temple based in hard work and kindness.  
+
+Or at the very least, not hating yourself or feeling worthless about yourself. 
+
+It could be an ambition, or something you want to aciheve. 
+
+This part is crucial, because it's transfering our time and energy into developing something more positive.
+
+
+Secondly, we also want to at the same time, to construct a much more forgiving and healthy temple for us to worship. 
+
+
+It doesn't matter what religion people believe in.
+
+Quite frankly, I don't even think religion itself gives a shit.
+
+What matters is understanding this idea of faith. 
+
+And how it moulds into our interpretation of reality, as well as our understanding the world around us. 
+
+As a medium through which we all attempt to understand the world. 
+
+Because religion has very little to do with organised faith.
+
+Instead, religion is defined by our beliefs - something every single one of us have in common.
+
+The trick is in seperating religion from the common widespread institutions which try to 'claim' it.
+
+Because a lot of us can get caught up in anger created from identifying other people's beliefs. 
+
+When it completely misses the mark on understanding our own spirituality. 
+
+Regardless of what we believe, we all still relate to our beliefs in the same way. 
+
+
+
+
+This also explains why it can be difficult to construct new temples.
+
+For example, when we start a new routine or perhaps even a new hobby.
+
+It's because there is no pre-existing temple, and so it's like building a foundation from scratch. 
+
+Instead, it needs to come from other means. 
+
+-->
+
+    </div>
+
+    <p class="blog-footer-bottom-text content">
+        My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
+    </p> 
+      
+
+
+      
+  <div id="writing" class="writing-flex">
+
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2018/01/17/my-last-post-hopefully/"><img class="writing-thumbnail" src="/img/blog/25.png" alt="Hello there"></br>
+
+      My Last Post, Hopefully</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/12/03/daddy-reades-delicious-comeback/"><img class="writing-thumbnail" src="/img/blog/24.png" alt="Hello there"></br>
+
+      Daddy Reade&#39;s Delicious Comeback</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/10/01/i-may-have-discovered-how-to-be-happy/"><img class="writing-thumbnail" src="/img/blog/23.png" alt="Hello there"></br>
+
+      I May Have Discovered How To Be Happy</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/09/17/i-still-struggle-with-my-first-relationship/"><img class="writing-thumbnail" src="/img/blog/22.png" alt="Hello there"></br>
+
+      I Still Struggle With My First Relationship</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/09/03/amelia-snow/"><img class="writing-thumbnail" src="/img/blog/21.png" alt="Hello there"></br>
+
+      Amelia Snow</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/08/20/why-i-disowned-my-mother-in-2016/"><img class="writing-thumbnail" src="/img/blog/20.png" alt="Hello there"></br>
+
+      Why I Disowned My Mother In 2016</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/08/06/love-thy-temple/"><img class="writing-thumbnail" src="/img/blog/19.png" alt="Hello there"></br>
+
+      Love Thy Temple</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/07/23/compassion-is-masturbation-without-the-guilt/"><img class="writing-thumbnail" src="/img/blog/18.png" alt="Hello there"></br>
+
+      Compassion Is Masturbation Without The Guilt</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/07/09/two-philosophies/"><img class="writing-thumbnail" src="/img/blog/17.png" alt="Hello there"></br>
+
+      Two Philosophies</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/06/11/your-emotions-are-an-elaborate-lie/"><img class="writing-thumbnail" src="/img/blog/16.png" alt="Hello there"></br>
+
+      Your Emotions Are An Elaborate Lie</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/05/28/the-unforunate-laymans-guide-to-beating-addiction/"><img class="writing-thumbnail" src="/img/blog/15.png" alt="Hello there"></br>
+
+      The Unforunate Layman&#39;s Guide To Beating Addiction</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/05/14/why-the-paleo-diet-isnt-bullshit/"><img class="writing-thumbnail" src="/img/blog/14.png" alt="Hello there"></br>
+
+      Why The Paleo Diet Isn&#39;t Bullshit</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/04/30/understanding-my-invalid-obsession-with-success/"><img class="writing-thumbnail" src="/img/blog/13.png" alt="Hello there"></br>
+
+      Understanding My Invalid Obsession With Success</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/04/16/self-awareness-the-two-step-tango/"><img class="writing-thumbnail" src="/img/blog/12.png" alt="Hello there"></br>
+
+      Self-Awareness: The Two-Step Tango</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/03/31/success-is-a-verifiable-system/"><img class="writing-thumbnail" src="/img/blog/11.png" alt="Hello there"></br>
+
+      Success Is A Verifiable System</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/03/16/non-postal/"><img class="writing-thumbnail" src="/img/blog/10.png" alt="Hello there"></br>
+
+      Non-Postal</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/02/19/what-it-means-to-be-an-effective-adult/"><img class="writing-thumbnail" src="/img/blog/09.png" alt="Hello there"></br>
+
+      What It Means To Be An Effective Adult</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/02/08/an-intuitive-and-simple-guide-to-understanding-your-depression/"><img class="writing-thumbnail" src="/img/blog/08.png" alt="Hello there"></br>
+
+      An Intuitive And Simple Guide To Understanding Your Depression</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/01/22/why-young-men-resort-to-pick-up/"><img class="writing-thumbnail" src="/img/blog/07.png" alt="Hello there"></br>
+
+      Why Young Men Resort To Pick Up</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/01/08/have-you-an-effective-communication-with-you-and-me/"><img class="writing-thumbnail" src="/img/blog/06.png" alt="Hello there"></br>
+
+      Have You An Effective Communication With You And Me</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/12/25/please-dont-tell-me-youre-sorry/"><img class="writing-thumbnail" src="/img/blog/05.png" alt="Hello there"></br>
+
+      Please Don&#39;t Tell Me You&#39;re Sorry</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/12/11/smart-people-dont-think.-they-plan-ahead/"><img class="writing-thumbnail" src="/img/blog/04.png" alt="Hello there"></br>
+
+      Smart People Don&#39;t Think. They Plan Ahead</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/11/27/why-obtaining-a-full-time-job-should-be-your-number-one-priority/"><img class="writing-thumbnail" src="/img/blog/03.png" alt="Hello there"></br>
+
+      Why Obtaining A Full-time Job Should Be Your Number One Priority</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/11/13/what-it-means-to-be-a-porn-addict/"><img class="writing-thumbnail" src="/img/blog/02.png" alt="Hello there"></br>
+
+      What It Means To Be A Porn Addict</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/10/30/intuitive-explanations-make-you-dizzyingly-smart/"><img class="writing-thumbnail" src="/img/blog/01.png" alt="Hello there"></br>
+
+      Intuitive Explanations Make You Dizzyingly Smart</a>
+
+      </div>
+      
+  </div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'juliusreade';
+    var disqus_identifier = 'https:\/\/juliusreade.com\/2017\/08\/06\/love-thy-temple\/';
+    var disqus_title = 'Love Thy Temple';
+    var disqus_url = 'https:\/\/juliusreade.com\/2017\/08\/06\/love-thy-temple\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+</section>
+
+
+
+ 
+
+
+
+
+  </div>
+<script id="dsq-count-scr" src="//juliusreade.disqus.com/count.js" async></script>
+</body>
+<footer class="container ">
+  <div class="footer-article">
+    <p>
+    &copy; 2016 Julius Reade.
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+    if you believe in that kind of thing.  
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+

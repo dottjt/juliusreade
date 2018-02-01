@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}.container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}.column,.columns,.container{width:100%;box-sizing:border-box}.column,.columns{float:left}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:900px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%;max-width:440px}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4rem;line-height:1.2}h1,h2{letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type=button],input[type=reset],input[type=submit]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:focus,.button:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type=button].button-primary,input[type=reset].button-primary,input[type=submit].button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:focus,.button.button-primary:hover,button.button-primary:focus,button.button-primary:hover,input[type=button].button-primary:focus,input[type=button].button-primary:hover,input[type=reset].button-primary:focus,input[type=reset].button-primary:hover,input[type=submit].button-primary:focus,input[type=submit].button-primary:hover{color:#fff;background-color:#1eaedb;border-color:#1eaedb}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type=checkbox],input[type=radio]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:400}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}.button,button{margin-bottom:1rem}fieldset,input,select,textarea{margin-bottom:1.5rem}blockquote,dl,figure,form,ol,p,pre,table,ul{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}
+  </style>
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  
+  <meta name="description" content="I think the paleo diet is brilliant. I&#39;ve been eating paleo on and off for approximately five years, remaining entirely paleo for the past two - Julius Reade">
+  <meta name="author" content="Julius Reade">
+  <meta name="keywords" content="[yolo]">
+
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85083093-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+  
+
+<meta property="og:title" content="Why The Paleo Diet Isn&#39;t Bullshit">
+<meta property="og:description" content="I think the paleo diet is brilliant. I&#39;ve been eating paleo on and off for approximately five years, remaining entirely paleo for the past two - Julius Reade">
+<meta property="og:image" content="https://juliusreade.com/img/blog/14.png">
+<meta property="og:url" content="https://juliusreade.com/2017/05/14/why-the-paleo-diet-isnt-bullshit/">
+<meta property="og:site_name" content="Julius Reade: Why The Paleo Diet Isn&#39;t Bullshit">
+
+
+<meta name="twitter:title" content="Why The Paleo Diet Isn&#39;t Bullshit ">
+<meta name="twitter:description" content="I think the paleo diet is brilliant. I&#39;ve been eating paleo on and off for approximately five years, remaining entirely paleo for the past two - Julius Reade">
+<meta name="twitter:image" content="https://juliusreade.com/img/blog/14.png">
+<meta name="twitter:site" content="@JuliusReade">
+<meta name="twitter:creator" content="@JuliusReade">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Why The Paleo Diet Isn&#39;t Bullshit">
+
+
+<link rel="preconnect" href="juliusreade.com/services">
+<link rel="preconnect" href="juliusreade.com/about">
+<link rel="preconnect" href="juliusreade.com/writing">
+  
+  <title>Julius Reade | Why The Paleo Diet Isn&#39;t Bullshit</title>
+
+</head>
+
+<body>
+  <div class="container article-container">
+
+<section class="column content-width">
+  
+  <a class="homepage-back" href="/">
+  <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M11.262,16.714l9.002,8.999  c0.395,0.394,1.035,0.394,1.431,0c0.395-0.394,0.395-1.034,0-1.428L13.407,16l8.287-8.285c0.395-0.394,0.395-1.034,0-1.429  c-0.395-0.394-1.036-0.394-1.431,0l-9.002,8.999C10.872,15.675,10.872,16.325,11.262,16.714z" fill="#121313" fill-rule="evenodd" id="Chevron_Right"/><g/><g/><g/><g/><g/><g/></svg>
+  </a>
+  
+
+    <h1 class="blog-article-title"><a href="/2017/05/14/why-the-paleo-diet-isnt-bullshit/">Why The Paleo Diet Isn&#39;t Bullshit</a></h1>
+    <h3>By Julius Reade </h3> 
+    
+    <div class="social-container-article"><a class="social1000" href="https://www.twitter.com/dottjt"><span ><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook"><g><path d="M511.992,256.008c0,141.387-114.6,255.98-255.988,255.98c-141.396,0-255.996-114.594-255.996-255.98    C-0.004,114.619,114.607,0.012,255.996,0.012C397.393,0.012,512,114.619,511.992,256.008z" fill="#2556A0"/><path d="M265.074,370.74l-47.757,47.764l88.585,88.594c104.943-20.734,186.832-105.563,203.129-212.029    L329.073,115.104L183.068,288.725L265.074,370.74z" opacity="0.15"/></g><g id="Facebook_1_"><g><path d="M277.996,233.047l0.008-49.664h0.047c-0.039-0.344-0.047-0.672-0.055-1.023     c0-6.43,5.211-11.648,11.633-11.648h39.444l-0.008-20.055l0.008-7.742v-27.811h-58.147l-0.008,0.188     c-30,2.313-53.601,27.389-53.601,57.967v59.797l-34.397-0.008v55.631h34.397v129.826h60.679V281.99h39.5l6.163-48.943H277.996z" fill="#F4F6F9"/></g></g></g></svg></a>
+</a>    
+</span>
+<a class="social1000" href="https://www.facebook.com/julius.reade"><span ><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="twitter"><g><path d="M511.994,256c0,141.387-114.6,255.996-255.988,255.996c-141.4,0-256-114.609-256-255.996    c0-141.389,114.6-255.996,255.992-255.996C397.395,0.004,512.002,114.611,511.994,256z" fill="#00B7EB"/><path d="M185.563,250.859l-40.391,40.389l29.781,29.781l-11.938,11.953l44.288,44.281l-6.336,6.734l-87.187-6.719    l134.521,134.514c2.563,0.078,5.117,0.203,7.703,0.203c137.998,0,250.426-109.203,255.738-245.904L408.801,163.148    L258.045,323.342L185.563,250.859z" opacity="0.1"/></g><path d="M417.191,187.797c-11.172,4.938-23.156,8.281-35.758,9.797   c12.852-7.703,22.719-19.906,27.367-34.445c-12.016,7.133-25.352,12.305-39.516,15.102c-11.359-12.109-27.538-19.656-45.444-19.656   c-34.374,0-62.241,27.859-62.241,62.266c0,4.875,0.547,9.625,1.609,14.188c-51.733-2.609-97.592-27.375-128.295-65.063   c-5.375,9.203-8.438,19.906-8.445,31.313c0.008,21.609,11,40.656,27.703,51.828c-10.203-0.328-19.797-3.125-28.203-7.781   c0,0.25,0,0.516,0,0.766c0,30.186,21.461,55.342,49.938,61.092c-5.219,1.406-10.734,2.156-16.398,2.156   c-4.023,0-7.922-0.375-11.719-1.094c7.93,24.734,30.922,42.734,58.14,43.234c-21.296,16.688-48.124,26.656-77.296,26.656   c-5.023-0.016-9.98-0.281-14.852-0.875c27.555,17.67,60.266,27.998,95.421,27.998c114.506,0,177.099-94.904,177.099-177.215   c0-2.672-0.055-5.375-0.164-8.047C398.285,211.234,408.84,200.266,417.191,187.797z" fill="#F4F6F9" id="Twitter_2_"/></g></svg></a>
+</a>
+</span>
+<a class="social1000"href="https://github.com/dottjt/julius">      <span><a  href=""><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="40px" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="github_1_"><g><path d="M511.994,256c0,141.387-114.607,255.988-256.004,255.988C114.613,511.988,0.006,397.387,0.006,256    c0-141.381,114.6-255.988,255.992-255.988C397.379,0.012,511.994,114.619,511.994,256z" fill="#3C3C3C"/><path d="M173.719,267.975l-45.68,0.695l-13.988,2.391l8.863,8.867l-4.77,2.266l64.465,64.477l-1.867,1.875    l50.475,50.482l-2.141,2.367l-11.39,4.055l99.202,99.195c96.826-23.633,172.027-102.305,190.613-201.021L347.638,143.758    L188.055,277.959L173.719,267.975z" opacity="0.2"/></g><path d="M416.918,271.068l0.273-2.773c-16.859-1.617-33.633-1.758-49.93-0.539   c2.625-8.258,3.992-17.584,3.891-28.186c-0.211-22.547-7.813-40.086-19.757-54.656c2.304-13.727,0.586-27.438-3.758-41.156   c-17.078,1.375-32.444,6.891-46.124,16.508c-25.578-5.141-51.141-5.461-76.727-0.008c-15.96-10.641-31.632-15.867-47.053-16.5   c-4.578,15.102-5.281,30.008-1.43,44.648c-13.445,14.117-18.594,31.258-18.336,50.227c0.133,10.875,1.836,20.529,4.953,29.076   c-16.047-1.164-32.539-1.016-49.129,0.594l0.258,2.758c16.91-1.617,33.707-1.75,50.012-0.484c0.602,1.438,1.219,2.859,1.891,4.242   c-17.672-0.461-33.594,1.055-48.48,4.672l0.672,2.703c15.121-3.664,31.324-5.141,49.418-4.539   c11.953,21.008,34.983,33.352,68.529,37.266c-7.805,6.242-11.984,13.633-13.054,21.984c0,0-3.539,0-17.758,0   c-23.866-0.008-30.374-30.07-55.085-27.102c23.969,11.758,19.195,49.297,57.546,49.297c12.891,0.008,15.641,0.008,16.109,0.008   v34.404c0.18,5.57-2.273,9.289-6.227,11.867c13.726,1.375,24.062-5.398,24.062-13.727c0-8.311,0-41.443,0-45.475   c0-4.07,4.297-4.383,4.297-4.383v53.107c0.164,5.305-2.43,8.313-5.188,11.18c12.109,0.469,23.492-1.914,24-12.102   c0,0,0.008-48.264,0.008-50.834c0-2.547,4.234-2.617,4.234,0c0,2.625,0,48.451,0,48.451c0.125,8.586,7.617,15.563,23.516,14.484   c-4.227-3.398-5.547-6.805-5.547-11.758c0-4.945,0-52.529,0-52.529s4.383-0.219,4.383,4.383c0,4.563,0,36.625,0,44.279   c0,9.875,11.984,13.953,25.656,13.555c-4.469-3.313-7.531-7.273-7.531-12.555v-53.279c-0.477-7.828-3.688-15.234-10.016-22.094   c30.655-4.656,52.756-16.766,63.764-38.43c18.156-0.617,34.398,0.859,49.586,4.547l0.664-2.711   c-15.023-3.641-31.07-5.164-48.922-4.68c0.625-1.375,1.242-2.742,1.758-4.195C382.848,269.303,399.832,269.436,416.918,271.068z    M160.922,314.279c-0.758,0-1.383-0.43-1.383-0.938c0-0.531,0.625-0.961,1.383-0.961c0.742,0,1.367,0.43,1.367,0.961   C162.289,313.857,161.664,314.279,160.922,314.279z M165.203,317.186c-0.82,0-1.516-0.469-1.516-1.07   c0-0.578,0.688-1.047,1.516-1.047c0.836,0,1.508,0.469,1.508,1.055C166.719,316.717,166.047,317.186,165.203,317.186z    M169.563,320.943c-0.984,0-1.766-0.555-1.766-1.234c0-0.711,0.766-1.266,1.766-1.266c0.984,0,1.781,0.563,1.781,1.258   S170.547,320.943,169.563,320.943z M173.805,325.451c-1.148,0-2.086-0.648-2.086-1.453s0.938-1.445,2.086-1.445   c1.141,0,2.086,0.641,2.086,1.453C175.891,324.811,174.945,325.459,173.805,325.451z M178.453,330.568   c-1.266,0-2.305-0.734-2.305-1.625s1.039-1.625,2.305-1.625c1.297,0,2.328,0.734,2.328,1.633   C180.781,329.834,179.75,330.568,178.453,330.568z M183.859,335.756c-1.414,0-2.555-0.813-2.563-1.797   c0.008-1.008,1.148-1.813,2.563-1.813c1.43,0,2.563,0.813,2.578,1.813C186.422,334.943,185.297,335.748,183.859,335.756z    M191.164,340.678c-1.57,0.008-2.852-0.891-2.852-2c-0.008-1.109,1.281-2,2.852-2c1.577,0,2.851,0.891,2.851,2   S192.741,340.678,191.164,340.678z M200.218,343.326c-1.563,0-2.867-0.906-2.867-2.008c0-1.094,1.305-2.008,2.867-2.008   c1.57,0,2.867,0.906,2.867,2.008S201.788,343.326,200.218,343.326z M209.765,343.615c-1.578-0.008-2.859-0.891-2.859-1.984   c0-1.125,1.281-2.016,2.859-2.016s2.836,0.891,2.836,2.016C212.601,342.725,211.343,343.607,209.765,343.615z M219.187,343.803   c-1.563,0.008-2.852-0.891-2.852-2.008c0-1.094,1.273-1.992,2.852-2c1.57,0.008,2.852,0.898,2.852,2   C222.038,342.912,220.757,343.803,219.187,343.803z" fill="#F4F6F9" id="Github_1_"/></g></svg></a>
+</a>
+</span>
+
+</div>
+		<h6 class="subtitle is-6">May 14, 2017</h6>
+
+    <div class="content">
+      
+
+<!--
+I eat paleo and here's why I'm not crazy.
+Why the paleo diet isn't bullshit. 
+
+-->
+
+<p>I think the paleo diet is brilliant.</p>
+
+<p>I&rsquo;ve been eating paleo on and off for approximately five years, remaining entirely paleo for the past two.</p>
+
+<p>It&rsquo;s brilliant because I&rsquo;m a health fanatic, and it helps me maintain that quite easily.</p>
+
+<p>I suppose I&rsquo;m writing this article because of all the mixed, and largely negative ideas of what the paleo diet actually is.</p>
+
+<p>In part, because of the intense transformation that takes place on someone&rsquo;s face, the moment you tell them you eat paleo.</p>
+
+<p>Almost as if they&rsquo;ve just discovered someone&rsquo;s been inappropiately touching their children.</p>
+
+<p>It&rsquo;s terrifying.</p>
+
+<!--There's something intense that changes within a person when you tell them you eat paleo. 
+
+In the same sense that there's a bit of a taboo surrounding the underground gambling circuit or touching other people's children. -->
+
+<p>Many people view the paleo diet as this hilarious market-driven gimmick, that abtains to running around naked, beating people with a club like an ancient caveman.</p>
+
+<p>Perhaps even as the natural evolutional trend to scientology.</p>
+
+<p>Which baffles me, because the diet makes sense from both scientifically and nutritionally.</p>
+
+<p>However, that&rsquo;s aside from the point, because humans will always stoop to the lowest common demoninator.</p>
+
+<p>Oh wait, Trump got elected?</p>
+
+<p>Go figure.</p>
+
+<p>Ultimately, I think there are two issues at play here.</p>
+
+<p>Firstly, I think we inherently distrust fanatics.</p>
+
+<p>And of course, it takes a fanatic to want to do the whole paleo thing in the first place, which really doesn&rsquo;t help.</p>
+
+<p>Because fanatics are viewed as a kind of unholy disease, rather than a source of truth.</p>
+
+<p>Especially when it comes to health and diets.</p>
+
+<p>And when everyone has an opinion, yours is always the wrong one.</p>
+
+<p>Secondly, and perhaps most influentially, is the connotation the paleo diet has with the paleolithic period.</p>
+
+<p>Put simply, here&rsquo;s how it usually goes down when I try to explain the paleo diet:</p>
+
+<p>&ldquo;So the paleo blah, blah, blah, blah, blah blah blah blah.&rdquo;</p>
+
+<p>Because once you mention the word &lsquo;paleo&rsquo;, you can literally see their brain shut off and enter into a kind of droopy fantasy-land.</p>
+
+<p>Every word you speak following that specific word becomes nothing more than biological soup to them.</p>
+
+<p>At that point, they&rsquo;ve already happily generalised absolutely everything they&rsquo;re willing to know about you.</p>
+
+<p>&ldquo;Ah, that dickhead. I bet he uses a spear instead of fork. Poor bugger.&rdquo;</p>
+
+<p>This is frustating because the paleo diet has very little, if almost nothing to do with the paleolithic period.</p>
+
+<p>It really is nothing more than a cheap reference, like what pineapples have to do with apples.</p>
+
+<p>Oh, and let&rsquo;s not even get started on this word &lsquo;diet&rsquo; which already raises strong suspicion well beyond the scope of this article.</p>
+
+<p>So here I am, hoping to explain the whole paleo thing to you, and why you may not get it.</p>
+
+<p>In particular, I want to go into the kind of lifestyle it promotes, as well as the kinds of people it inherently attracts.</p>
+
+<p>Because I promise I don&rsquo;t touch other people&rsquo;s children.</p>
+
+<p>Well&hellip;</p>
+
+<h3 id="health-fanatic-ewwwwwww">Health Fanatic? Ewwwwwww.</h3>
+
+<p><img src="/img/blog/14-01.png" alt="Health Fanatic? Ewwwwwww." /></p>
+
+<p>I suppose there&rsquo;s a very simple question I would pose to anyone.</p>
+
+<p>Is it such a bad thing to be fanatic about your health?</p>
+
+<p>A lot of people think that the whole paleo thing is taking it a bit too far.</p>
+
+<p>On the contrary, I think heart disease and obesity is taking it too far.</p>
+
+<p>Of course, the point of difference is that non-paleo folk don&rsquo;t believe that their diets contribute towards these things.</p>
+
+<p>Hence the point of contention.</p>
+
+<p>Regardless, allow me to try and explain why a lot of us paleo folk do it anyway.</p>
+
+<p>And for the sake of argument, let&rsquo;s just assume that it&rsquo;s good for you.</p>
+
+<p>Not eating processed foods, excess sugar and meeting all your nutritional requirements surely can&rsquo;t be a bad thing, right?</p>
+
+<p>You cunning Nazi.</p>
+
+<p>Certainly, I want to start off by saying that we don&rsquo;t hate food.</p>
+
+<p>We love our bread and butter just as much as anyone else, and by gosh, do we think it tastes great.</p>
+
+<p>It&rsquo;s just that we care that little bit more about our health instead.</p>
+
+<p>Which really is to say that we have different priorities about what we believe will make us happier in the long run.</p>
+
+<p>Many of us paleo folk believe that being able to function will make us happier in the long run, than having access to the simple pleasures of bread.</p>
+
+<p>And of course, there are plenty of amazingly delicious paleo dishes out there too, so it&rsquo;s not like we&rsquo;re starving ourselves either.</p>
+
+<p>So why this emphasis on function?</p>
+
+<p>Well, in my particular case it&rsquo;s two-fold:</p>
+
+<p>At the end of the day, I just want to achieve my goals and ambitions and get shit done.</p>
+
+<p>And not being able to function to the fullest of my ability greatly affects my physical and mental health, which trickles down to my ability to pursue my goals.</p>
+
+<p>Which when you&rsquo;re already suffering from mental health issues, is difficult enough as is without eating as healthily as possible to regulate how you feel.</p>
+
+<p>Basically, it becomes very difficult to do anything, let alone prevent mental breakdowns when you&rsquo;re feeling bloated or your energy levels aren&rsquo;t consistent.</p>
+
+<p>And perhaps, some might argue, poor diets are the inherent cause of depression and  mental illness (look into the correlation between gut bacteria and depresison).</p>
+
+<p>So that&rsquo;s the why, however the reason behind the paleo diet is so much more pervasive than that.</p>
+
+<p>Obviously, this kind of regime attracts a certain kind of person which society largely loathes anyway.</p>
+
+<p>Excessively productive, ambitious and highly insecure individuals.</p>
+
+<p>Those fucking twats.</p>
+
+<p>Again, we love cake just as much as anyone else, it&rsquo;s just we love the idea of becoming a multi-millionaire more.</p>
+
+<p>Yes, I know it&rsquo;s not sexy.</p>
+
+<p>And that&rsquo;s ultimately why the movement was doomed to remain an obscure niche for those who need it to pursue their greed.</p>
+
+<p>It&rsquo;s part of what drums up this me vs them mentality.</p>
+
+<p>I suppose this is why the paleo diet is often compared to religion - as this bohemoth, &lsquo;you shall not pass&rsquo; ideology, where there is one way, and one way only.</p>
+
+<p>Which is true, because in our case, our one and only way is success - and we will stop at nothing to obtain it.</p>
+
+<p>Because there is nothing we hate more than those more successful than us.</p>
+
+<p>I feel it. You feel it. We all feel it.</p>
+
+<p>I suppose there&rsquo;s a fatal flaw in thinking that paleo is about making everyone healthy.</p>
+
+<p>In reality, it&rsquo;s about exploiting those who are unhealthy, in order to be more productive and to beat the competition down.</p>
+
+<h3 id="the-science-behind-the-paleo-diet">The Science Behind The Paleo Diet</h3>
+
+<p><img src="/img/blog/14-02.png" alt="The Science Behind The Paleo Diet" /></p>
+
+<p>As for what the diet actually is, I suppose there are two points that stand out:</p>
+
+<p>The first point relates the range of foods that the diet deems appropiate to eat.</p>
+
+<p>This is the aspect people focus on most, and is perhaps the least important point.</p>
+
+<p>The other aspect is the macro-nutrient content of the diet - which is ultimately what matters when considering any diet.</p>
+
+<p>&hellip;and arguably has nothing directly to do with the paleo diet at all.</p>
+
+<p>In a nutshell, here is what is wrong with most modern diets, from a macro-nutrient point of view:</p>
+
+<p>Put simply, most of us are eating too much sugar and carbohydrates, provided our modern lifestyles.</p>
+
+<p>Why?</p>
+
+<p>Two reasons:</p>
+
+<p>Most people believe in this hiliarious concept called &lsquo;moderation&rsquo;, despite sugar being an inherently addictive substance.</p>
+
+<p>Secondly, the bastardisation and now wide-spread belief that fat is evil, even though it&rsquo;s not.</p>
+
+<p>The primary reason why sugar/carbs are bad is because they&rsquo;re an awful source of sustainable energy.</p>
+
+<p>They burn quickly, meaning you must consistently eat more sugar to maintain your energy levels.</p>
+
+<p>Which in reality, given the inherent lack of self-control most of us exhibit, along with the addictive qualities of sugar, leads to over-eating.</p>
+
+<p>And as excess sugar readily converts into fat (unlike fat consumption, which does not), is a recipe for disaster.</p>
+
+<p>So there&rsquo;s ya problem.</p>
+
+<p>Now the alternative to a high-sugar diet is to instead rely on a high-fat diet (somewhat related to the process of ketosis), as fat makes for an excellent source of sustainable energy.</p>
+
+<p>Not only does it prevent cravings by making us feel full, however it&rsquo;s also a slow burning source of energy - meaning you don&rsquo;t need to eat as much to feel full.</p>
+
+<p>Perfect.</p>
+
+<p>The only issue is that in order to gear your body towards effectively metabolising fat as a primary source of energy.</p>
+
+<p>You must ensure that you keep your sugar/carb intake to an absolute minimum, in addition to increasing your fat intake.</p>
+
+<p>And guess what?</p>
+
+<p>Most modern diets make this entirely impossible.</p>
+
+<p>Not only are there few modern foods/meals today that are a high quality source of fat.</p>
+
+<p>However given most staples involve either wheat and rice - you&rsquo;re basically doomed for failure.</p>
+
+<p>This is where the paleo diet comes in.</p>
+
+<p>It&rsquo;s restrictive and that&rsquo;s the point.</p>
+
+<p>It&rsquo;s a guideline that allows you to eat high-fat and low-carb, by simply sticking to the foods we consider &lsquo;paleo&rsquo; foods.</p>
+
+<p>In addition, you also avoid all the other shit like gluten, lectins and phytates - which relates back to our first point.</p>
+
+<p>That certain foods are inherently destructive to human biology.</p>
+
+<p>I won&rsquo;t explore these ideas in detail, because I feel it&rsquo;s less important (though still very important) than compared to explaining the importance of macro-nutrient intake.</p>
+
+<p>Listen, if you&rsquo;re eating the right macro-nutrient ratios, then you&rsquo;re going to have success with your health.</p>
+
+<p>It&rsquo;s just the paleo diet makes it easier, because it&rsquo;s already built-in and cuts down on making those decisions.</p>
+
+<h3 id="paleo-vs-moderation">Paleo vs Moderation</h3>
+
+<p><img src="/img/blog/14-03.png" alt="Paleo vs Moderation" /></p>
+
+<p>Interestingly, and perhaps why so many people have come to fear the diet.</p>
+
+<p>Is because the paleo diet stands, quite literally, opposite to the general view of moderation.</p>
+
+<p>It goes against this wide-spread belief in society that it&rsquo;s okay to moderate.</p>
+
+<p>Instead, what it proposes is restriction - which let&rsquo;s be honest, is probably what most of us need.</p>
+
+<p>Certainly, it&rsquo;s how I deal with a lot of my addictions and flaws, by completely restricting myself from my vices.</p>
+
+<p>So why should our diets be any different?</p>
+
+<p>It&rsquo;s the reason why things like routine and consistency work so well.</p>
+
+<p>Because humans are inherently emotional creatures that need structure and logic in their lives to function in society.</p>
+
+<p>Otherwise we wouldn&rsquo;t need laws or timetables.</p>
+
+<p>I suppose the great irony of the paleo diet is that it&rsquo;s incredibly suited for those who aren&rsquo;t fanatic about their health, as it makes dieting so easy.</p>
+
+<p>Yet on the otherhand it takes a fanatic to want to do it within the first place.</p>
+
+<p>The reason why it&rsquo;s easy and sustainable, is because it helps prevent cravings.</p>
+
+<p>And it takes the choice and anxiety out of choosing what we must eat next.</p>
+
+<p>In the paleo diet you literally do not need to think or worry.</p>
+
+<p>All you have to do is stick to a range of foods, and the rest will sort itself out. It&rsquo;s that simple.</p>
+
+<p>The problem however has never been with the paleo diet.</p>
+
+<p>It has been with the attitude us people have had towards health.</p>
+
+<p>In essence, it means that the less crazy you are with your health, the more inversely difficult it will be to become healthy.</p>
+
+<p>Not only will you be less committed mentally, however the diet you&rsquo;ll be approaching will be less effective.</p>
+
+<p>Due in part to your own self-limiting beliefs of what you believe may work as a diet, in order to satisfy your own beliefs.</p>
+
+<p>Which is also to say that if you&rsquo;re not dedicated to your health, then you&rsquo;re going to fail no matter what you do.</p>
+
+<p>It&rsquo;s the reason most diets fail.</p>
+
+<p>I suppose it&rsquo;s like those people who try to lose weight by doing the whole shake thing, yet they also refuse to exercise.</p>
+
+<p>It&rsquo;s what a lot of people, yet it does nothing to control cravings or even promote future healthy eating choices.</p>
+
+<p>The initiative simply isn&rsquo;t there.</p>
+
+<h3 id="it-just-works">It. Just. Works.</h3>
+
+<p><img src="/img/blog/14-04.png" alt="It. Just. Works." /></p>
+
+<p>You know, there&rsquo;s also a very good reason why people do the paleo diet.</p>
+
+<p>It just works.</p>
+
+<p>Ever since eating paleo, I don&rsquo;t crash or slow down nearly as much as I used to.</p>
+
+<p>I wake up at 5:43am each working day, and I blaze until 9pm at night.</p>
+
+<p>I mean, yes. I still get immensely bored at work and there are times where I just cbf everything and want to sleep all day.</p>
+
+<p>However I couldn&rsquo;t possibly imagine how much worse it would be if I didn&rsquo;t have all this extra energy from my diet.</p>
+
+<p>Even after all that, I still manage to find the energy to lift weights at 7:20pm after work, three times a week for an hour.</p>
+
+<p>I&rsquo;m focused. I&rsquo;m full of energy and my brain is literally go, go, go.</p>
+
+<p>You know that drowziness you get around 5:30pm on the train-ride home?</p>
+
+<p>I don&rsquo;t get that anymore.</p>
+
+<p>I think the interesting thing is that you don&rsquo;t realise how bad something is until you understand why and become aware of it.</p>
+
+<p>I remember prior to the paleo diet I used to have trouble shitting for years, and I would frequently get mouth ulcers.</p>
+
+<p>But you just assume that it&rsquo;s normal.</p>
+
+<p>You assume that this is the normal, human experience and I think this is part of the reason why people distrust the paleo diet.</p>
+
+<p>We&rsquo;re so stuck within our own paradigm, that we don&rsquo;t realise that there&rsquo;s so much more out there.</p>
+
+<p>It&rsquo;s sort of like the culture shock of when you visit another country, or when you work for a buisness for the first time and you finally understand what all the fuss is about.</p>
+
+<p>People don&rsquo;t realise that they could have so much more energy, because they think they don&rsquo;t realise that it&rsquo;s possible.</p>
+
+<p>Of course, the issue is that you have to experience it before you can realise it, and this is the reason most people will never change.</p>
+
+<p>You cannot know until you commit, and people are afraid of committing, hence the term &lsquo;average&rsquo;.</p>
+
+<p>Most people are average, myself included.</p>
+
+<p>Rather, it&rsquo;s what you choose to do with it that defines who you are.</p>
+
+<h3 id="i-m-not-trying-to-touch-your-children">I&rsquo;m Not Trying To Touch Your Children</h3>
+
+<p><img src="/img/blog/14-05.png" alt="I'm Not Trying To Touch Your Children" /></p>
+
+<p>The worst part is how defensive people get when you mention the paleo diet, as if you&rsquo;re attacking their way of life.</p>
+
+<p>As if there&rsquo;s something inherently immoral, almost disgusting about having a different nutritional opinion.</p>
+
+<p>As if I&rsquo;m trying to sabotage the progress of the human race.</p>
+
+<p>It&rsquo;s absolutely terrifying.</p>
+
+<p>At the end of the day, it’s a numbers game.</p>
+
+<p>We have more fat, obese, unhealthy, sugar-addled people today than we do people willing to do something about it.</p>
+
+<p>So rather than target them, we instead find ourselves ridiculing those who are challenging the status quo.</p>
+
+<p>Perhaps that is the problem with society - our current inability to say things for what they are, due to the repurcussions of other people&rsquo;s self-limiting beliefs.</p>
+
+<p>You know, because apparently it’s their ‘choice’ to have a tray of donuts for breakfast.</p>
+
+<p>Yet myself on the other hand, am significantly deluded for thinking there&rsquo;s anything positive in having a steak instead.</p>
+
+<p>Yet when it comes to those who are actually doing something about their health, they are ridiculed.</p>
+
+<p>They are ridiculed for trying too hard.</p>
+
+<p>However, I will say this.</p>
+
+<p>I think I understand how religious people feel about persecution over their own beliefs.</p>
+
+<p>And that&rsquo;s okay too, because this is the world we live in - and your claim is what you can get away with.</p>
+
+<p>Which in my case, is a healthy body and a self-determination that goes beyond these wods.</p>
+
+<p>I think I&rsquo;m doing just fine.</p>
+
+<!--
+
+
+Just sayin', you never see a fat person eat paleo, even if they may be an asshole. 
+
+
+Most people still believe in the two-party system, some form of god and a whole number of fallacies which would be enough to sedate an entire village. 
+
+However that's also aside from the point. 
+
+
+Instead, I think the reason for reigns much deeper than merely 'the facts' or our own individual beliefs. 
+
+
+
+
+
+
+The funny thing is when people report that it makes them feel like shit.
+
+When they already have been feeling like shit the entire time anyway. 
+
+
+
+This is on top of all the inherently bad things in existing non-paleo foods, such as 
+
+
+
+
+
+
+
+You know, you can rip the bandaid off, or you can teeter it slowly until it you eventually whimper at the prickle of your skin hair. 
+
+That's entirely your choice.
+
+
+Of course, most of us aren't, due to the range of modern foods we 
+
+
+
+The problem is that most modern foods and diets make it incredibly difficult to do so. 
+
+Most Western diets are 
+
+
+I eat paleo and here's why I'm not crazy.
+
+
+
+
+-->
+
+    </div>
+
+    <p class="blog-footer-bottom-text content">
+        My name is Julius Reade and I am an aspiring developer and designer. I tell stories to help people better understand themselves. I am based in Melbourne, Australia.  <a href="https://juliusreade.com/">https://juliusreade.com/</a> 
+    </p> 
+      
+
+
+      
+  <div id="writing" class="writing-flex">
+
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2018/01/17/my-last-post-hopefully/"><img class="writing-thumbnail" src="/img/blog/25.png" alt="Hello there"></br>
+
+      My Last Post, Hopefully</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/12/03/daddy-reades-delicious-comeback/"><img class="writing-thumbnail" src="/img/blog/24.png" alt="Hello there"></br>
+
+      Daddy Reade&#39;s Delicious Comeback</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/10/01/i-may-have-discovered-how-to-be-happy/"><img class="writing-thumbnail" src="/img/blog/23.png" alt="Hello there"></br>
+
+      I May Have Discovered How To Be Happy</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/09/17/i-still-struggle-with-my-first-relationship/"><img class="writing-thumbnail" src="/img/blog/22.png" alt="Hello there"></br>
+
+      I Still Struggle With My First Relationship</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/09/03/amelia-snow/"><img class="writing-thumbnail" src="/img/blog/21.png" alt="Hello there"></br>
+
+      Amelia Snow</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/08/20/why-i-disowned-my-mother-in-2016/"><img class="writing-thumbnail" src="/img/blog/20.png" alt="Hello there"></br>
+
+      Why I Disowned My Mother In 2016</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/08/06/love-thy-temple/"><img class="writing-thumbnail" src="/img/blog/19.png" alt="Hello there"></br>
+
+      Love Thy Temple</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/07/23/compassion-is-masturbation-without-the-guilt/"><img class="writing-thumbnail" src="/img/blog/18.png" alt="Hello there"></br>
+
+      Compassion Is Masturbation Without The Guilt</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/07/09/two-philosophies/"><img class="writing-thumbnail" src="/img/blog/17.png" alt="Hello there"></br>
+
+      Two Philosophies</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/06/11/your-emotions-are-an-elaborate-lie/"><img class="writing-thumbnail" src="/img/blog/16.png" alt="Hello there"></br>
+
+      Your Emotions Are An Elaborate Lie</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/05/28/the-unforunate-laymans-guide-to-beating-addiction/"><img class="writing-thumbnail" src="/img/blog/15.png" alt="Hello there"></br>
+
+      The Unforunate Layman&#39;s Guide To Beating Addiction</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/05/14/why-the-paleo-diet-isnt-bullshit/"><img class="writing-thumbnail" src="/img/blog/14.png" alt="Hello there"></br>
+
+      Why The Paleo Diet Isn&#39;t Bullshit</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/04/30/understanding-my-invalid-obsession-with-success/"><img class="writing-thumbnail" src="/img/blog/13.png" alt="Hello there"></br>
+
+      Understanding My Invalid Obsession With Success</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/04/16/self-awareness-the-two-step-tango/"><img class="writing-thumbnail" src="/img/blog/12.png" alt="Hello there"></br>
+
+      Self-Awareness: The Two-Step Tango</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/03/31/success-is-a-verifiable-system/"><img class="writing-thumbnail" src="/img/blog/11.png" alt="Hello there"></br>
+
+      Success Is A Verifiable System</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/03/16/non-postal/"><img class="writing-thumbnail" src="/img/blog/10.png" alt="Hello there"></br>
+
+      Non-Postal</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/02/19/what-it-means-to-be-an-effective-adult/"><img class="writing-thumbnail" src="/img/blog/09.png" alt="Hello there"></br>
+
+      What It Means To Be An Effective Adult</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/02/08/an-intuitive-and-simple-guide-to-understanding-your-depression/"><img class="writing-thumbnail" src="/img/blog/08.png" alt="Hello there"></br>
+
+      An Intuitive And Simple Guide To Understanding Your Depression</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/01/22/why-young-men-resort-to-pick-up/"><img class="writing-thumbnail" src="/img/blog/07.png" alt="Hello there"></br>
+
+      Why Young Men Resort To Pick Up</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2017/01/08/have-you-an-effective-communication-with-you-and-me/"><img class="writing-thumbnail" src="/img/blog/06.png" alt="Hello there"></br>
+
+      Have You An Effective Communication With You And Me</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/12/25/please-dont-tell-me-youre-sorry/"><img class="writing-thumbnail" src="/img/blog/05.png" alt="Hello there"></br>
+
+      Please Don&#39;t Tell Me You&#39;re Sorry</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/12/11/smart-people-dont-think.-they-plan-ahead/"><img class="writing-thumbnail" src="/img/blog/04.png" alt="Hello there"></br>
+
+      Smart People Don&#39;t Think. They Plan Ahead</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/11/27/why-obtaining-a-full-time-job-should-be-your-number-one-priority/"><img class="writing-thumbnail" src="/img/blog/03.png" alt="Hello there"></br>
+
+      Why Obtaining A Full-time Job Should Be Your Number One Priority</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/11/13/what-it-means-to-be-a-porn-addict/"><img class="writing-thumbnail" src="/img/blog/02.png" alt="Hello there"></br>
+
+      What It Means To Be A Porn Addict</a>
+
+      </div>
+      
+
+      <div class="writing-list standard-text-size" style="text-align: left;">
+      <a class="writing-link" href="/2016/10/30/intuitive-explanations-make-you-dizzyingly-smart/"><img class="writing-thumbnail" src="/img/blog/01.png" alt="Hello there"></br>
+
+      Intuitive Explanations Make You Dizzyingly Smart</a>
+
+      </div>
+      
+  </div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'juliusreade';
+    var disqus_identifier = 'https:\/\/juliusreade.com\/2017\/05\/14\/why-the-paleo-diet-isnt-bullshit\/';
+    var disqus_title = 'Why The Paleo Diet Isn\x27t Bullshit';
+    var disqus_url = 'https:\/\/juliusreade.com\/2017\/05\/14\/why-the-paleo-diet-isnt-bullshit\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+</section>
+
+
+
+ 
+
+
+
+
+  </div>
+<script id="dsq-count-scr" src="//juliusreade.disqus.com/count.js" async></script>
+</body>
+<footer class="container ">
+  <div class="footer-article">
+    <p>
+    &copy; 2016 Julius Reade.
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+    if you believe in that kind of thing.  
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+
