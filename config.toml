@@ -1,9 +1,9 @@
 baseurl = "https://juliusreade.com/"
 languageCode = "en-us"
-title = "Somebody Please Help Me"  
+title = ""  
 theme = "reade"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
-description = "A blog with a focus on productivity, self-improvement and CRACK COCAINE."
+description = "Human expression."
 
 
 disqusShortname = "juliusreade"
