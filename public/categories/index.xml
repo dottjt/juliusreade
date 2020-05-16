@@ -1,36 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://juliusreade.com/categories/index.xml</link>
-    <description>Recent content on </description>
+    <title>Categories on </title>
+    <link>https://juliusreade.com/categories/</link>
+    <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <atom:link href="https://juliusreade.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Apr 2017 11:33:26 +1100</lastBuildDate>
+    
+	<atom:link href="https://juliusreade.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>About</title>
-      <link>https://juliusreade.com/about/</link>
-      <pubDate>Sun, 09 Oct 2016 09:54:24 +1100</pubDate>
+      <title>blog</title>
+      <link>https://juliusreade.com/categories/blog/</link>
+      <pubDate>Sun, 30 Apr 2017 11:33:26 +1100</pubDate>
       
-      <guid>https://juliusreade.com/about/</guid>
-      <description>&lt;p&gt;#About&lt;/p&gt;
-</description>
+      <guid>https://juliusreade.com/categories/blog/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Writing</title>
-      <link>https://juliusreade.com/writing/</link>
-      <pubDate>Sun, 09 Oct 2016 09:54:24 +1100</pubDate>
+      <title>depression</title>
+      <link>https://juliusreade.com/categories/depression/</link>
+      <pubDate>Sun, 30 Apr 2017 11:33:26 +1100</pubDate>
       
-      <guid>https://juliusreade.com/writing/</guid>
-      <description>&lt;p&gt;#About&lt;/p&gt;
-
-&lt;p&gt;rst rst&lt;/p&gt;
-
-&lt;p&gt;rs tsr strst&lt;/p&gt;
-</description>
+      <guid>https://juliusreade.com/categories/depression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mental illness</title>
+      <link>https://juliusreade.com/categories/mental-illness/</link>
+      <pubDate>Sun, 30 Apr 2017 11:33:26 +1100</pubDate>
+      
+      <guid>https://juliusreade.com/categories/mental-illness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dating</title>
+      <link>https://juliusreade.com/categories/dating/</link>
+      <pubDate>Sun, 22 Jan 2017 04:23:26 +2020</pubDate>
+      
+      <guid>https://juliusreade.com/categories/dating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adelaidesucks</title>
+      <link>https://juliusreade.com/categories/adelaidesucks/</link>
+      <pubDate>Tue, 20 Nov 2007 13:10:30 +0934</pubDate>
+      
+      <guid>https://juliusreade.com/categories/adelaidesucks/</guid>
+      <description></description>
     </item>
     
   </channel>

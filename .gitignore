@@ -1,9 +1,11 @@
 dll-themes
 node_modules
-pictures
-thumbnails
-prethumbnail
-content
-static
-themes
-layouts
+
+# pictures
+# thumbnails
+# prethumbnail
+# content
+# static
+# themes
+# layouts
+prethumbnail/to edit

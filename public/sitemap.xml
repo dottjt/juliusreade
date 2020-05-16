@@ -1,74 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://juliusreade.com/</loc>
-    <lastmod>2018-01-17T13:23:26+13:00</lastmod>
+    <loc>https://juliusreade.com/categories/blog/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2018/01/17/my-last-post-hopefully/</loc>
-    <lastmod>2018-01-17T13:23:26+13:00</lastmod>
+    <loc>https://juliusreade.com/blog/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/12/03/daddy-reades-delicious-comeback/</loc>
-    <lastmod>2017-12-03T16:23:26+13:00</lastmod>
+    <loc>https://juliusreade.com/categories/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/10/01/i-may-have-discovered-how-to-be-happy/</loc>
-    <lastmod>2017-10-01T11:33:26+11:00</lastmod>
+    <loc>https://juliusreade.com/tags/depression/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/09/17/i-still-struggle-with-my-first-relationship/</loc>
-    <lastmod>2017-09-17T11:33:26+11:00</lastmod>
+    <loc>https://juliusreade.com/categories/depression/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/09/03/amelia-snow/</loc>
-    <lastmod>2017-09-03T12:53:26+03:00</lastmod>
+    <loc>https://juliusreade.com/tags/mental-illness/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/08/20/why-i-disowned-my-mother-in-2016/</loc>
-    <lastmod>2017-08-20T14:23:23+18:00</lastmod>
+    <loc>https://juliusreade.com/categories/mental-illness/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/08/06/love-thy-temple/</loc>
-    <lastmod>2017-08-06T11:33:26+11:00</lastmod>
+    <loc>https://juliusreade.com/tags/mental-illness-guide/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/07/23/compassion-is-masturbation-without-the-guilt/</loc>
-    <lastmod>2017-07-23T03:16:22+10:00</lastmod>
+    <loc>https://juliusreade.com/2017/04/30/my-incredibly-unhealthy-obsession-with-success/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/2017/07/09/two-philosophies/</loc>
-    <lastmod>2017-07-09T08:31:26+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/2017/06/11/your-emotions-are-an-elaborate-lie/</loc>
-    <lastmod>2017-06-11T08:31:26+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/2017/05/28/the-unforunate-laymans-guide-to-beating-addiction/</loc>
-    <lastmod>2017-05-28T16:14:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/2017/05/14/why-the-paleo-diet-isnt-bullshit/</loc>
-    <lastmod>2017-05-14T11:33:26+11:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/2017/04/30/understanding-my-invalid-obsession-with-success/</loc>
-    <lastmod>2017-04-30T11:33:26+08:00</lastmod>
+    <loc>https://juliusreade.com/tags/</loc>
+    <lastmod>2017-04-30T11:33:26+11:00</lastmod>
   </url>
   
   <url>
@@ -77,12 +58,37 @@
   </url>
   
   <url>
+    <loc>https://juliusreade.com/tags/perspective/</loc>
+    <lastmod>2017-03-31T07:23:26+18:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://juliusreade.com/2017/03/31/success-is-a-verifiable-system/</loc>
     <lastmod>2017-03-31T07:23:26+18:00</lastmod>
   </url>
   
   <url>
+    <loc>https://juliusreade.com/tags/systems/</loc>
+    <lastmod>2017-03-31T07:23:26+18:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/blog/</loc>
+    <lastmod>2017-03-16T03:23:16+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://juliusreade.com/2017/03/16/non-postal/</loc>
+    <lastmod>2017-03-16T03:23:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/post/</loc>
+    <lastmod>2017-03-16T03:23:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/update/</loc>
     <lastmod>2017-03-16T03:23:16+02:00</lastmod>
   </url>
   
@@ -94,6 +100,11 @@
   <url>
     <loc>https://juliusreade.com/2017/02/08/an-intuitive-and-simple-guide-to-understanding-your-depression/</loc>
     <lastmod>2017-02-08T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/categories/dating/</loc>
+    <lastmod>2017-01-22T04:23:26+20:20</lastmod>
   </url>
   
   <url>
@@ -117,8 +128,33 @@
   </url>
   
   <url>
+    <loc>https://juliusreade.com/tags/career/</loc>
+    <lastmod>2016-11-27T14:53:55+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://juliusreade.com/2016/11/27/why-obtaining-a-full-time-job-should-be-your-number-one-priority/</loc>
     <lastmod>2016-11-27T14:53:55+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/work/</loc>
+    <lastmod>2016-11-27T14:53:55+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/addiction/</loc>
+    <lastmod>2016-11-13T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/pornography/</loc>
+    <lastmod>2016-11-13T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/pornography-addiction/</loc>
+    <lastmod>2016-11-13T11:33:26+11:00</lastmod>
   </url>
   
   <url>
@@ -127,8 +163,28 @@
   </url>
   
   <url>
+    <loc>https://juliusreade.com/tags/explanations/</loc>
+    <lastmod>2016-10-30T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://juliusreade.com/2016/10/30/intuitive-explanations-make-you-dizzyingly-smart/</loc>
     <lastmod>2016-10-30T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/narratives/</loc>
+    <lastmod>2016-10-30T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/tags/study/</loc>
+    <lastmod>2016-10-30T11:33:26+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/</loc>
+    <lastmod>2016-10-09T10:23:15+11:00</lastmod>
   </url>
   
   <url>
@@ -147,108 +203,18 @@
   </url>
   
   <url>
-    <loc>https://juliusreade.com/sydneysucks/the-missing-words/</loc>
-    <lastmod>2008-06-29T17:05:30+09:34</lastmod>
+    <loc>https://juliusreade.com/adelaidesucks/</loc>
+    <lastmod>2007-11-20T13:10:30+09:34</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/sydneysucks/i-hate-anime-part-eight/</loc>
-    <lastmod>2008-06-29T16:15:30+09:34</lastmod>
+    <loc>https://juliusreade.com/tags/adelaidesucks/</loc>
+    <lastmod>2007-11-20T13:10:30+09:34</lastmod>
   </url>
   
   <url>
-    <loc>https://juliusreade.com/sydneysucks/the-beginning-of-a-third-generation/</loc>
-    <lastmod>2008-06-28T18:02:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/petey-underground-part-4/</loc>
-    <lastmod>2008-01-26T14:48:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/still-writing-articles-that-make-just-as-much-sense-as-anime/</loc>
-    <lastmod>2008-01-21T12:33:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/threat-of-my-piss-lame-writing/</loc>
-    <lastmod>2008-01-20T21:34:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/petey-underground-part-2/</loc>
-    <lastmod>2008-01-12T21:36:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/petey-underground/</loc>
-    <lastmod>2008-01-11T21:18:01+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/rove-the-script-they-didnt-play-to-air./</loc>
-    <lastmod>2008-01-11T13:33:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/i-hate-anime..............-part-4/</loc>
-    <lastmod>2008-01-08T14:41:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/cover-it-correction-fluid/</loc>
-    <lastmod>2007-12-27T10:49:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/reading-is-the-no.-1</loc>
-    <lastmod>2007-12-23T19:48:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/the-underwood-series..................../</loc>
-    <lastmod>2007-12-23T19:48:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/rock-and-roll-adventures-review/</loc>
-    <lastmod>2007-12-22T11:02:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/i-hate-anime..............-part-3/</loc>
-    <lastmod>2007-12-19T14:17:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/hey-hey-hey/</loc>
-    <lastmod>2007-12-08T21:25:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/super-paper-mario-review/</loc>
-    <lastmod>2007-11-30T20:53:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/non-update-</loc>
-    <lastmod>2007-11-30T10:53:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/i-hate-writing-i-hate-reading..........but-i-like-music./</loc>
-    <lastmod>2007-11-28T19:20:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/final/</loc>
-    <lastmod>2007-11-27T10:30:30+09:34</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juliusreade.com/adelaidesucks/history-channel---battle-of-the-pacific--review/</loc>
-    <lastmod>2007-11-26T11:30:30+09:34</lastmod>
+    <loc>https://juliusreade.com/categories/adelaidesucks/</loc>
+    <lastmod>2007-11-20T13:10:30+09:34</lastmod>
   </url>
   
   <url>
@@ -297,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://juliusreade.com/adelaidesucks/non-update-</loc>
+    <loc>https://juliusreade.com/adelaidesucks/non-update-#2/</loc>
     <lastmod>2007-11-11T19:32:30+09:34</lastmod>
   </url>
   
@@ -334,6 +300,14 @@
   <url>
     <loc>https://juliusreade.com/adelaidesucks/suggested-websites/</loc>
     <lastmod>2007-10-01T11:18:30+09:34</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/1/01/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://juliusreade.com/1/01/01/</loc>
   </url>
   
 </urlset>
